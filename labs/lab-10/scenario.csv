@@ -1,0 +1,6 @@
+case_id,mechanism,synthetic_input,expected_output,control,failure_test,metric,role,source_id,monthly_volume,baseline_minutes,pilot_minutes,review_minutes,total_claims,supported_claims
+NS-46,Error budget,Failed action and unsafe answer logs,Error-budget burn chart,Pause rollout at threshold,Aggregate rate masks severe event,Severe failures per 1000 tasks,Service agent,POL-1,175,25,13,2,6,5
+NS-47,Feedback triage,User corrections and support tickets,Prioritized defect backlog,Preserve evidence and owner,Prompt tweak hides source defect,Median time to close defect,Team lead,POL-2,178,26,14,3,7,6
+NS-48,Experiment design,Pilot and comparison cohorts,Evaluation protocol,Avoid claiming causality from correlation,Different work mix biases result,Adjusted change in cycle time,Security reviewer,POL-3,181,27,15,4,8,7
+NS-49,Rollout wave gate,"Pilot QA, security and adoption data",Wave decision record,Named sponsor owns release,Wave launches without risk sign-off,Criteria passed divided by required,Analyst,POL-4,184,28,12,2,5,4
+NS-50,Retirement control,Unused agent and knowledge sources,Decommission checklist,Verify no dependent workflow remains,Connector remains active after agent removal,Orphaned privileged grants count,Agent maker,POL-5,187,22,13,3,6,5

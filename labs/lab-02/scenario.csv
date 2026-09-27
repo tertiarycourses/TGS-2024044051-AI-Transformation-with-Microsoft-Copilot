@@ -1,0 +1,6 @@
+case_id,mechanism,synthetic_input,expected_output,control,failure_test,metric,role,source_id,monthly_volume,baseline_minutes,pilot_minutes,review_minutes,total_claims,supported_claims
+NS-06,Prompt context window,Customer email and policy excerpts,Reusable prompt card,Never paste personal data into unmanaged chat,Answer omits policy exception,Grounded claims divided by claims,Service agent,POL-1,55,27,13,4,6,5
+NS-07,Grounded retrieval,Approved policy file and user query,Answer with source citations,Verify source version and user permission,Citation points to superseded policy,Supported answer statements divided by total,Team lead,POL-2,58,28,14,2,7,6
+NS-08,Word proposal draft,Synthetic service improvement brief,Draft proposal with evidence comments,Human owns final facts and approval,Unsupported cost claim enters draft,Verified claims divided by total claims,Security reviewer,POL-3,61,22,15,3,8,7
+NS-09,Excel service analysis,Synthetic ticket table: 120 rows,Pivot table and chart,Check formula range and outliers,Blank dates skew mean,Median cycle time by category,Analyst,POL-4,64,23,12,4,5,4
+NS-10,PowerPoint executive story,Approved Word findings and Excel chart,Five-slide review deck,Presenter validates every number,Chart title and source mismatch,Correct figures divided by checked figures,Agent maker,POL-5,67,24,13,2,6,5

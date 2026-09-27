@@ -1,0 +1,6 @@
+case_id,mechanism,synthetic_input,expected_output,control,failure_test,metric,role,source_id,monthly_volume,baseline_minutes,pilot_minutes,review_minutes,total_claims,supported_claims
+NS-41,Golden test set,Representative questions and edge cases,Regression test dataset,Data owner approves test updates,Test set contains stale expected answer,Changed results per release,Service agent,POL-1,160,27,12,3,5,4
+NS-42,Time-saved estimate,Baseline 18 min and assisted 11 min,Net time-saving model,Validate observed samples,Gross saving ignores review effort,Net minutes saved per task,Team lead,POL-2,163,28,13,4,6,5
+NS-43,ROI model,"Seats, license cost, volume and wage rate",Conservative ROI worksheet,Separate measured from assumed inputs,Benefit double-counts the same task,(Value minus cost) divided by cost,Security reviewer,POL-3,166,22,14,2,7,6
+NS-44,License optimization,Seat use by department and month,Reallocation recommendation,Line manager confirms exceptions,Idle seats kept while pilot waits,Active seats divided by assigned seats,Analyst,POL-4,169,23,15,3,8,7
+NS-45,Latency budget,"Prompt, retrieval and tool timings",Latency waterfall,Do not remove safety checks for speed,Tool call dominates p95,p95 seconds per task,Agent maker,POL-5,172,24,12,4,5,4

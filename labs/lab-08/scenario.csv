@@ -1,0 +1,6 @@
+case_id,mechanism,synthetic_input,expected_output,control,failure_test,metric,role,source_id,monthly_volume,baseline_minutes,pilot_minutes,review_minutes,total_claims,supported_claims
+NS-36,A2A handoff,Service agent and billing agent contract,Handoff trace and result,Entra authorization at endpoint,Receiving agent loses context boundary,Successful authorized handoffs,Service agent,POL-1,145,22,15,4,8,7
+NS-37,Multi-agent orchestration,"Research, policy and drafting subagents",Orchestration map and provenance,Supervisor approves final answer,Agents amplify an unsupported claim,Conflicts detected before release,Team lead,POL-2,148,23,12,2,5,4
+NS-38,Cross-platform error handling,CRM timeout and retry policy,Dead-letter record with correlation ID,No duplicate write on retry,Retry creates duplicate case,Duplicate-free retries divided by retries,Security reviewer,POL-3,151,24,13,3,6,5
+NS-39,Usage telemetry,Weekly usage export by cohort,Adoption dashboard,Aggregate before sharing individual trends,Metric counts sign-in as productive use,Weekly active users divided by licensed,Analyst,POL-4,154,25,14,4,7,6
+NS-40,Agent quality rubric,Twenty task prompts with known answers,Evaluation matrix,Block release on critical safety failure,High average hides one severe error,Pass rate per risk tier,Agent maker,POL-5,157,26,15,2,8,7

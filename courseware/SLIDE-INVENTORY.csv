@@ -1,0 +1,301 @@
+slide,topic,case,anchor,title,source
+17,1,NS-01,ARCH,Tenant readiness: system boundary,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+18,1,NS-01,EVIDENCE,Tenant readiness: worked input and output,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+19,1,NS-01,CONFIG,Tenant readiness: control design,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+20,1,NS-01,CASE,Tenant readiness: failure trace,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+21,1,NS-01,FORMULA,Tenant readiness: measurement,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+22,1,NS-01,MODEL,Tenant readiness: acceptance gate,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+23,1,NS-02,ARCH,License allocation: system boundary,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+24,1,NS-02,EVIDENCE,License allocation: worked input and output,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+25,1,NS-02,CONFIG,License allocation: control design,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+26,1,NS-02,CASE,License allocation: failure trace,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+27,1,NS-02,FORMULA,License allocation: measurement,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+28,1,NS-02,MODEL,License allocation: acceptance gate,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+29,1,NS-03,ARCH,Graph permission scope: system boundary,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+30,1,NS-03,EVIDENCE,Graph permission scope: worked input and output,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+31,1,NS-03,CONFIG,Graph permission scope: control design,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+32,1,NS-03,CASE,Graph permission scope: failure trace,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+33,1,NS-03,FORMULA,Graph permission scope: measurement,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+34,1,NS-03,MODEL,Graph permission scope: acceptance gate,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+35,1,NS-04,ARCH,Business-process mapping: system boundary,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+36,1,NS-04,EVIDENCE,Business-process mapping: worked input and output,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+37,1,NS-04,CONFIG,Business-process mapping: control design,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+38,1,NS-04,CASE,Business-process mapping: failure trace,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+39,1,NS-04,FORMULA,Business-process mapping: measurement,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+40,1,NS-04,MODEL,Business-process mapping: acceptance gate,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+41,1,NS-05,ARCH,Opportunity scoring: system boundary,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+42,1,NS-05,EVIDENCE,Opportunity scoring: worked input and output,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+43,1,NS-05,CONFIG,Opportunity scoring: control design,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+44,1,NS-05,CASE,Opportunity scoring: failure trace,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+45,1,NS-05,FORMULA,Opportunity scoring: measurement,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+46,1,NS-05,MODEL,Opportunity scoring: acceptance gate,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+47,1,NS-06,ARCH,Prompt context window: system boundary,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+48,1,NS-06,EVIDENCE,Prompt context window: worked input and output,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+49,1,NS-06,CONFIG,Prompt context window: control design,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+50,1,NS-06,CASE,Prompt context window: failure trace,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+51,1,NS-06,FORMULA,Prompt context window: measurement,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+52,1,NS-06,MODEL,Prompt context window: acceptance gate,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+53,1,NS-07,ARCH,Grounded retrieval: system boundary,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+54,1,NS-07,EVIDENCE,Grounded retrieval: worked input and output,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+55,1,NS-07,CONFIG,Grounded retrieval: control design,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+56,1,NS-07,CASE,Grounded retrieval: failure trace,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+57,1,NS-07,FORMULA,Grounded retrieval: measurement,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+58,1,NS-07,MODEL,Grounded retrieval: acceptance gate,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+59,1,NS-08,ARCH,Word proposal draft: system boundary,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+60,1,NS-08,EVIDENCE,Word proposal draft: worked input and output,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+61,1,NS-08,CONFIG,Word proposal draft: control design,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+62,1,NS-08,CASE,Word proposal draft: failure trace,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+63,1,NS-08,FORMULA,Word proposal draft: measurement,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+64,1,NS-08,MODEL,Word proposal draft: acceptance gate,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+65,1,NS-09,ARCH,Excel service analysis: system boundary,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+66,1,NS-09,EVIDENCE,Excel service analysis: worked input and output,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+67,1,NS-09,CONFIG,Excel service analysis: control design,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+68,1,NS-09,CASE,Excel service analysis: failure trace,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+69,1,NS-09,FORMULA,Excel service analysis: measurement,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+70,1,NS-09,MODEL,Excel service analysis: acceptance gate,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+71,1,NS-10,ARCH,PowerPoint executive story: system boundary,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+72,1,NS-10,EVIDENCE,PowerPoint executive story: worked input and output,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+73,1,NS-10,CONFIG,PowerPoint executive story: control design,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+74,1,NS-10,CASE,PowerPoint executive story: failure trace,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+75,1,NS-10,FORMULA,PowerPoint executive story: measurement,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+76,1,NS-10,MODEL,PowerPoint executive story: acceptance gate,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+77,1,NS-11,ARCH,Outlook response workflow: system boundary,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+78,1,NS-11,EVIDENCE,Outlook response workflow: worked input and output,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+79,1,NS-11,CONFIG,Outlook response workflow: control design,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+80,1,NS-11,CASE,Outlook response workflow: failure trace,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+81,1,NS-11,FORMULA,Outlook response workflow: measurement,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+82,1,NS-11,MODEL,Outlook response workflow: acceptance gate,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+83,1,NS-12,ARCH,Teams meeting synthesis: system boundary,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+84,1,NS-12,EVIDENCE,Teams meeting synthesis: worked input and output,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+85,1,NS-12,CONFIG,Teams meeting synthesis: control design,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+86,1,NS-12,CASE,Teams meeting synthesis: failure trace,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+87,1,NS-12,FORMULA,Teams meeting synthesis: measurement,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+88,1,NS-12,MODEL,Teams meeting synthesis: acceptance gate,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+89,1,NS-13,ARCH,Adoption rollout: system boundary,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+90,1,NS-13,EVIDENCE,Adoption rollout: worked input and output,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+91,1,NS-13,CONFIG,Adoption rollout: control design,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+92,1,NS-13,CASE,Adoption rollout: failure trace,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+93,1,NS-13,FORMULA,Adoption rollout: measurement,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+94,1,NS-13,MODEL,Adoption rollout: acceptance gate,https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture
+95,2,NS-14,ARCH,Identity and MFA: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+96,2,NS-14,EVIDENCE,Identity and MFA: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+97,2,NS-14,CONFIG,Identity and MFA: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+98,2,NS-14,CASE,Identity and MFA: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+99,2,NS-14,FORMULA,Identity and MFA: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+100,2,NS-14,MODEL,Identity and MFA: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+101,2,NS-15,ARCH,Sensitivity labels: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+102,2,NS-15,EVIDENCE,Sensitivity labels: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+103,2,NS-15,CONFIG,Sensitivity labels: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+104,2,NS-15,CASE,Sensitivity labels: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+105,2,NS-15,FORMULA,Sensitivity labels: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+106,2,NS-15,MODEL,Sensitivity labels: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+107,2,NS-16,ARCH,DLP boundaries: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+108,2,NS-16,EVIDENCE,DLP boundaries: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+109,2,NS-16,CONFIG,DLP boundaries: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+110,2,NS-16,CASE,DLP boundaries: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+111,2,NS-16,FORMULA,DLP boundaries: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+112,2,NS-16,MODEL,DLP boundaries: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+113,2,NS-17,ARCH,SharePoint oversharing: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+114,2,NS-17,EVIDENCE,SharePoint oversharing: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+115,2,NS-17,CONFIG,SharePoint oversharing: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+116,2,NS-17,CASE,SharePoint oversharing: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+117,2,NS-17,FORMULA,SharePoint oversharing: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+118,2,NS-17,MODEL,SharePoint oversharing: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+119,2,NS-18,ARCH,Retention and records: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+120,2,NS-18,EVIDENCE,Retention and records: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+121,2,NS-18,CONFIG,Retention and records: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+122,2,NS-18,CASE,Retention and records: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+123,2,NS-18,FORMULA,Retention and records: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+124,2,NS-18,MODEL,Retention and records: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+125,2,NS-19,ARCH,Audit event trail: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+126,2,NS-19,EVIDENCE,Audit event trail: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+127,2,NS-19,CONFIG,Audit event trail: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+128,2,NS-19,CASE,Audit event trail: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+129,2,NS-19,FORMULA,Audit event trail: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+130,2,NS-19,MODEL,Audit event trail: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+131,2,NS-20,ARCH,Prompt-injection boundary: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+132,2,NS-20,EVIDENCE,Prompt-injection boundary: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+133,2,NS-20,CONFIG,Prompt-injection boundary: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+134,2,NS-20,CASE,Prompt-injection boundary: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+135,2,NS-20,FORMULA,Prompt-injection boundary: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+136,2,NS-20,MODEL,Prompt-injection boundary: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+137,2,NS-21,ARCH,Fabrication review: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+138,2,NS-21,EVIDENCE,Fabrication review: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+139,2,NS-21,CONFIG,Fabrication review: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+140,2,NS-21,CASE,Fabrication review: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+141,2,NS-21,FORMULA,Fabrication review: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+142,2,NS-21,MODEL,Fabrication review: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+143,2,NS-22,ARCH,Tool permission design: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+144,2,NS-22,EVIDENCE,Tool permission design: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+145,2,NS-22,CONFIG,Tool permission design: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+146,2,NS-22,CASE,Tool permission design: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+147,2,NS-22,FORMULA,Tool permission design: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+148,2,NS-22,MODEL,Tool permission design: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+149,2,NS-23,ARCH,Environment policy: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+150,2,NS-23,EVIDENCE,Environment policy: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+151,2,NS-23,CONFIG,Environment policy: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+152,2,NS-23,CASE,Environment policy: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+153,2,NS-23,FORMULA,Environment policy: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+154,2,NS-23,MODEL,Environment policy: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+155,2,NS-24,ARCH,Incident response: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+156,2,NS-24,EVIDENCE,Incident response: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+157,2,NS-24,CONFIG,Incident response: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+158,2,NS-24,CASE,Incident response: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+159,2,NS-24,FORMULA,Incident response: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+160,2,NS-24,MODEL,Incident response: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+161,2,NS-25,ARCH,Human decision gate: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+162,2,NS-25,EVIDENCE,Human decision gate: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+163,2,NS-25,CONFIG,Human decision gate: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+164,2,NS-25,CASE,Human decision gate: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+165,2,NS-25,FORMULA,Human decision gate: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+166,2,NS-25,MODEL,Human decision gate: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq
+167,3,NS-26,ARCH,Agent purpose contract: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+168,3,NS-26,EVIDENCE,Agent purpose contract: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+169,3,NS-26,CONFIG,Agent purpose contract: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+170,3,NS-26,CASE,Agent purpose contract: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+171,3,NS-26,FORMULA,Agent purpose contract: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+172,3,NS-26,MODEL,Agent purpose contract: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+173,3,NS-27,ARCH,Knowledge-source curation: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+174,3,NS-27,EVIDENCE,Knowledge-source curation: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+175,3,NS-27,CONFIG,Knowledge-source curation: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+176,3,NS-27,CASE,Knowledge-source curation: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+177,3,NS-27,FORMULA,Knowledge-source curation: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+178,3,NS-27,MODEL,Knowledge-source curation: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+179,3,NS-28,ARCH,Citation evaluation: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+180,3,NS-28,EVIDENCE,Citation evaluation: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+181,3,NS-28,CONFIG,Citation evaluation: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+182,3,NS-28,CASE,Citation evaluation: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+183,3,NS-28,FORMULA,Citation evaluation: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+184,3,NS-28,MODEL,Citation evaluation: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+185,3,NS-29,ARCH,Copilot Studio topic routing: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+186,3,NS-29,EVIDENCE,Copilot Studio topic routing: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+187,3,NS-29,CONFIG,Copilot Studio topic routing: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+188,3,NS-29,CASE,Copilot Studio topic routing: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+189,3,NS-29,FORMULA,Copilot Studio topic routing: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+190,3,NS-29,MODEL,Copilot Studio topic routing: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+191,3,NS-30,ARCH,Connector action: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+192,3,NS-30,EVIDENCE,Connector action: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+193,3,NS-30,CONFIG,Connector action: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+194,3,NS-30,CASE,Connector action: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+195,3,NS-30,FORMULA,Connector action: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+196,3,NS-30,MODEL,Connector action: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+197,3,NS-31,ARCH,Approval action: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+198,3,NS-31,EVIDENCE,Approval action: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+199,3,NS-31,CONFIG,Approval action: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+200,3,NS-31,CASE,Approval action: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+201,3,NS-31,FORMULA,Approval action: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+202,3,NS-31,MODEL,Approval action: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+203,3,NS-32,ARCH,Power Automate flow: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+204,3,NS-32,EVIDENCE,Power Automate flow: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+205,3,NS-32,CONFIG,Power Automate flow: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+206,3,NS-32,CASE,Power Automate flow: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+207,3,NS-32,FORMULA,Power Automate flow: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+208,3,NS-32,MODEL,Power Automate flow: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+209,3,NS-33,ARCH,Dynamics 365 context: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+210,3,NS-33,EVIDENCE,Dynamics 365 context: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+211,3,NS-33,CONFIG,Dynamics 365 context: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+212,3,NS-33,CASE,Dynamics 365 context: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+213,3,NS-33,FORMULA,Dynamics 365 context: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+214,3,NS-33,MODEL,Dynamics 365 context: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+215,3,NS-34,ARCH,Foundry model choice: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+216,3,NS-34,EVIDENCE,Foundry model choice: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+217,3,NS-34,CONFIG,Foundry model choice: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+218,3,NS-34,CASE,Foundry model choice: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+219,3,NS-34,FORMULA,Foundry model choice: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+220,3,NS-34,MODEL,Foundry model choice: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+221,3,NS-35,ARCH,MCP tool registration: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+222,3,NS-35,EVIDENCE,MCP tool registration: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+223,3,NS-35,CONFIG,MCP tool registration: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+224,3,NS-35,CASE,MCP tool registration: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+225,3,NS-35,FORMULA,MCP tool registration: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+226,3,NS-35,MODEL,MCP tool registration: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+227,3,NS-36,ARCH,A2A handoff: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+228,3,NS-36,EVIDENCE,A2A handoff: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+229,3,NS-36,CONFIG,A2A handoff: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+230,3,NS-36,CASE,A2A handoff: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+231,3,NS-36,FORMULA,A2A handoff: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+232,3,NS-36,MODEL,A2A handoff: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+233,3,NS-37,ARCH,Multi-agent orchestration: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+234,3,NS-37,EVIDENCE,Multi-agent orchestration: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+235,3,NS-37,CONFIG,Multi-agent orchestration: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+236,3,NS-37,CASE,Multi-agent orchestration: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+237,3,NS-37,FORMULA,Multi-agent orchestration: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+238,3,NS-37,MODEL,Multi-agent orchestration: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+239,3,NS-38,ARCH,Cross-platform error handling: system boundary,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+240,3,NS-38,EVIDENCE,Cross-platform error handling: worked input and output,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+241,3,NS-38,CONFIG,Cross-platform error handling: control design,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+242,3,NS-38,CASE,Cross-platform error handling: failure trace,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+243,3,NS-38,FORMULA,Cross-platform error handling: measurement,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+244,3,NS-38,MODEL,Cross-platform error handling: acceptance gate,https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve
+245,4,NS-39,ARCH,Usage telemetry: system boundary,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+246,4,NS-39,EVIDENCE,Usage telemetry: worked input and output,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+247,4,NS-39,CONFIG,Usage telemetry: control design,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+248,4,NS-39,CASE,Usage telemetry: failure trace,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+249,4,NS-39,FORMULA,Usage telemetry: measurement,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+250,4,NS-39,MODEL,Usage telemetry: acceptance gate,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+251,4,NS-40,ARCH,Agent quality rubric: system boundary,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+252,4,NS-40,EVIDENCE,Agent quality rubric: worked input and output,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+253,4,NS-40,CONFIG,Agent quality rubric: control design,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+254,4,NS-40,CASE,Agent quality rubric: failure trace,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+255,4,NS-40,FORMULA,Agent quality rubric: measurement,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+256,4,NS-40,MODEL,Agent quality rubric: acceptance gate,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+257,4,NS-41,ARCH,Golden test set: system boundary,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+258,4,NS-41,EVIDENCE,Golden test set: worked input and output,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+259,4,NS-41,CONFIG,Golden test set: control design,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+260,4,NS-41,CASE,Golden test set: failure trace,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+261,4,NS-41,FORMULA,Golden test set: measurement,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+262,4,NS-41,MODEL,Golden test set: acceptance gate,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+263,4,NS-42,ARCH,Time-saved estimate: system boundary,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+264,4,NS-42,EVIDENCE,Time-saved estimate: worked input and output,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+265,4,NS-42,CONFIG,Time-saved estimate: control design,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+266,4,NS-42,CASE,Time-saved estimate: failure trace,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+267,4,NS-42,FORMULA,Time-saved estimate: measurement,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+268,4,NS-42,MODEL,Time-saved estimate: acceptance gate,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+269,4,NS-43,ARCH,ROI model: system boundary,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+270,4,NS-43,EVIDENCE,ROI model: worked input and output,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+271,4,NS-43,CONFIG,ROI model: control design,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+272,4,NS-43,CASE,ROI model: failure trace,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+273,4,NS-43,FORMULA,ROI model: measurement,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+274,4,NS-43,MODEL,ROI model: acceptance gate,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+275,4,NS-44,ARCH,License optimization: system boundary,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+276,4,NS-44,EVIDENCE,License optimization: worked input and output,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+277,4,NS-44,CONFIG,License optimization: control design,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+278,4,NS-44,CASE,License optimization: failure trace,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+279,4,NS-44,FORMULA,License optimization: measurement,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+280,4,NS-44,MODEL,License optimization: acceptance gate,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+281,4,NS-45,ARCH,Latency budget: system boundary,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+282,4,NS-45,EVIDENCE,Latency budget: worked input and output,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+283,4,NS-45,CONFIG,Latency budget: control design,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+284,4,NS-45,CASE,Latency budget: failure trace,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+285,4,NS-45,FORMULA,Latency budget: measurement,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+286,4,NS-45,MODEL,Latency budget: acceptance gate,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+287,4,NS-46,ARCH,Error budget: system boundary,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+288,4,NS-46,EVIDENCE,Error budget: worked input and output,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+289,4,NS-46,CONFIG,Error budget: control design,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+290,4,NS-46,CASE,Error budget: failure trace,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+291,4,NS-46,FORMULA,Error budget: measurement,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+292,4,NS-46,MODEL,Error budget: acceptance gate,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+293,4,NS-47,ARCH,Feedback triage: system boundary,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+294,4,NS-47,EVIDENCE,Feedback triage: worked input and output,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+295,4,NS-47,CONFIG,Feedback triage: control design,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+296,4,NS-47,CASE,Feedback triage: failure trace,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+297,4,NS-47,FORMULA,Feedback triage: measurement,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+298,4,NS-47,MODEL,Feedback triage: acceptance gate,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+299,4,NS-48,ARCH,Experiment design: system boundary,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+300,4,NS-48,EVIDENCE,Experiment design: worked input and output,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+301,4,NS-48,CONFIG,Experiment design: control design,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+302,4,NS-48,CASE,Experiment design: failure trace,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+303,4,NS-48,FORMULA,Experiment design: measurement,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+304,4,NS-48,MODEL,Experiment design: acceptance gate,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+305,4,NS-49,ARCH,Rollout wave gate: system boundary,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+306,4,NS-49,EVIDENCE,Rollout wave gate: worked input and output,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+307,4,NS-49,CONFIG,Rollout wave gate: control design,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+308,4,NS-49,CASE,Rollout wave gate: failure trace,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+309,4,NS-49,FORMULA,Rollout wave gate: measurement,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+310,4,NS-49,MODEL,Rollout wave gate: acceptance gate,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+311,4,NS-50,ARCH,Retirement control: system boundary,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+312,4,NS-50,EVIDENCE,Retirement control: worked input and output,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+313,4,NS-50,CONFIG,Retirement control: control design,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+314,4,NS-50,CASE,Retirement control: failure trace,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+315,4,NS-50,FORMULA,Retirement control: measurement,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting
+316,4,NS-50,MODEL,Retirement control: acceptance gate,https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting

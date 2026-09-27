@@ -1,0 +1,126 @@
+{
+  "kind": "WSQ",
+  "course_code": "TGS-2024044051",
+  "title": "AI Transformation with Microsoft Copilot",
+  "tagline": "Practical technology training for the work you do",
+  "category": "WSQ AI and Microsoft Copilot",
+  "hook": "Plan, secure, integrate and measure Copilot at work",
+  "marketing_pitch": "Turn Microsoft Copilot from isolated prompts into a controlled business improvement programme. Build an implementation plan, test security gates, design an agent workflow, and measure pilot value using evidence your stakeholders can review.",
+  "description": "AI Transformation with Microsoft Copilot equips participants to plan, design, implement and evaluate AI-powered solutions using Microsoft 365 Copilot, Copilot Studio, Microsoft Foundry, Power Platform and connected business workflows. Learners work with organisational data, files and application context while preserving privacy and security. They design custom agents, prompts and integrations; test output quality, prompt injection and sensitive-data exposure; and use telemetry and ROI measures to decide whether to scale. Synthetic cases and structured labs keep practical evidence separate from live customer data.",
+  "learning_outcomes": [
+    "Develop technology implementation plans and business processes for Microsoft Copilot.",
+    "Develop control procedures for Microsoft Copilot to manage security.",
+    "Evaluate the integration of Microsoft Copilot to ensure alignment with business objectives.",
+    "Develop optimization plans for Microsoft Copilot to improve business operations."
+  ],
+  "topics": [
+    {
+      "title": "Microsoft 365 Copilot Implementation and Business Process Transformation",
+      "items": [
+        "Tenant readiness",
+        "License allocation",
+        "Graph permission scope",
+        "Business-process mapping",
+        "Opportunity scoring",
+        "Prompt context window",
+        "Grounded retrieval",
+        "Word proposal draft",
+        "Excel service analysis",
+        "PowerPoint executive story",
+        "Outlook response workflow",
+        "Teams meeting synthesis",
+        "Adoption rollout"
+      ]
+    },
+    {
+      "title": "Microsoft Copilot Administration, Security and Responsible AI",
+      "items": [
+        "Identity and MFA",
+        "Sensitivity labels",
+        "DLP boundaries",
+        "SharePoint oversharing",
+        "Retention and records",
+        "Audit event trail",
+        "Prompt-injection boundary",
+        "Fabrication review",
+        "Tool permission design",
+        "Environment policy",
+        "Incident response",
+        "Human decision gate"
+      ]
+    },
+    {
+      "title": "Copilot Integration, AI Agents and Cross-Platform Workflows",
+      "items": [
+        "Agent purpose contract",
+        "Knowledge-source curation",
+        "Citation evaluation",
+        "Copilot Studio topic routing",
+        "Connector action",
+        "Approval action",
+        "Power Automate flow",
+        "Dynamics 365 context",
+        "Foundry model choice",
+        "MCP tool registration",
+        "A2A handoff",
+        "Multi-agent orchestration",
+        "Cross-platform error handling"
+      ]
+    },
+    {
+      "title": "AI Optimization, Performance Monitoring and Business Value Assessment",
+      "items": [
+        "Usage telemetry",
+        "Agent quality rubric",
+        "Golden test set",
+        "Time-saved estimate",
+        "ROI model",
+        "License optimization",
+        "Latency budget",
+        "Error budget",
+        "Feedback triage",
+        "Experiment design",
+        "Rollout wave gate",
+        "Retirement control"
+      ]
+    }
+  ],
+  "duration": "3 days",
+  "hours": "24 hours including 2 hours of assessment",
+  "level": "Beginner",
+  "mode": "Physical classroom or synchronised Zoom; corporate training available",
+  "venue": "12 Woodlands Square #07-85/86/87, Woods Square Tower 1, Singapore 737715",
+  "schedule": "9:30am–6:30pm on scheduled training days",
+  "assessment": "Written assessment and practical performance assessment, one hour each, individual open book",
+  "who_should_attend": "Business transformation, operations, IT, security and process owners who need evidence-led Copilot adoption and control decisions.",
+  "certification": "Certificate of Achievement from Tertiary Infotech Academy and, on meeting WSQ assessment and attendance requirements, SkillsFuture Singapore Statement of Attainment via OpenCerts.",
+  "funding_validity": "5 Apr 2024 to 4 Apr 2028",
+  "fees": {
+    "before_gst": 1500,
+    "gst": 135,
+    "including_gst": 1635
+  },
+  "funding_scenarios": [
+    {
+      "label": "Baseline 50% funded",
+      "funding_amount": 750,
+      "payable_before_gst": 750,
+      "payable_including_gst": 885
+    },
+    {
+      "label": "MCES / SME 70% funded",
+      "funding_amount": 1050,
+      "payable_before_gst": 450,
+      "payable_including_gst": 585
+    }
+  ],
+  "badges": [
+    "SkillsFuture Credit",
+    "PSEA",
+    "SFEC",
+    "Absentee Payroll",
+    "MCES"
+  ],
+  "registration_url": "https://www.tertiarycourses.com.sg/wsq-ai-transformation-with-microsoft-copilot.html",
+  "contact": "enquiry@tertiaryinfotech.com · +65 6100 0613"
+}
