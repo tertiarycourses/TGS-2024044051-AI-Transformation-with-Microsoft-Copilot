@@ -1,0 +1,6 @@
+case_id,monthly_volume_synthetic,baseline_minutes_synthetic,copilot_minutes_synthetic,review_minutes_synthetic,loaded_hourly_value_sgd_assumption,monthly_license_cost_sgd_assumption
+NS-01,41,24,13,3,43,45
+NS-02,45,26,14,4,43,45
+NS-03,49,28,15,3,43,45
+NS-04,53,30,16,4,43,45
+NS-05,57,32,17,3,43,45

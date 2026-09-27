@@ -1,6 +1,6 @@
-case_id,mechanism,synthetic_input,expected_output,control,failure_test,metric,role,source_id,monthly_volume,baseline_minutes,pilot_minutes,review_minutes,total_claims,supported_claims
-NS-36,A2A handoff,Service agent and billing agent contract,Handoff trace and result,Entra authorization at endpoint,Receiving agent loses context boundary,Successful authorized handoffs,Service agent,POL-1,145,22,15,4,8,7
-NS-37,Multi-agent orchestration,"Research, policy and drafting subagents",Orchestration map and provenance,Supervisor approves final answer,Agents amplify an unsupported claim,Conflicts detected before release,Team lead,POL-2,148,23,12,2,5,4
-NS-38,Cross-platform error handling,CRM timeout and retry policy,Dead-letter record with correlation ID,No duplicate write on retry,Retry creates duplicate case,Duplicate-free retries divided by retries,Security reviewer,POL-3,151,24,13,3,6,5
-NS-39,Usage telemetry,Weekly usage export by cohort,Adoption dashboard,Aggregate before sharing individual trends,Metric counts sign-in as productive use,Weekly active users divided by licensed,Analyst,POL-4,154,25,14,4,7,6
-NS-40,Agent quality rubric,Twenty task prompts with known answers,Evaluation matrix,Block release on critical safety failure,High average hides one severe error,Pass rate per risk tier,Agent maker,POL-5,157,26,15,2,8,7
+case_id,executive_decision,source_input,copilot_action,expected_artifact,decision_gate,challenge,outcome_measure
+NS-36,Use-case portfolio,Twelve candidate workflows,"Prioritise volume, value, feasibility and risk",Ranked opportunity portfolio,Reject ownerless or unsafe use case,Highest score hides weak data,Validated value per use case
+NS-37,Adoption baseline,Usage by role and department,Compare active use with licensed seats,Adoption baseline chart,Separate sign-in from productive use,Licence assignment counted as adoption,Weekly active users per cohort
+NS-38,Enablement design,Three role-specific skill gaps,Ask Copilot to draft role-based coaching plans,90-day enablement calendar,Manager commits time for practice,One generic training suits no one,Practice completion by role
+NS-39,Feedback loop,Pilot questions and complaints,Cluster feedback themes with Copilot,Prioritised improvement backlog,Assign owner and due date,Prompt advice hides a source defect,Median defect closure time
+NS-40,Scale gate,"Pilot adoption, quality and risk data","Prepare go, hold or stop recommendation",Wave-two decision paper,Every critical threshold passes,Average score hides a severe failure,Criteria passed divided by required

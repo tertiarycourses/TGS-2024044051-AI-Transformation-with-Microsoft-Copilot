@@ -1,6 +1,6 @@
-case_id,mechanism,synthetic_input,expected_output,control,failure_test,metric,role,source_id,monthly_volume,baseline_minutes,pilot_minutes,review_minutes,total_claims,supported_claims
-NS-31,Approval action,Low and high value requests,Approval path with actor and timestamp,No silent auto-approval,High-value request takes fast path,Threshold breaches count,Service agent,POL-1,130,24,14,2,7,6
-NS-32,Power Automate flow,Form submission and structured fields,Flow run trace,Use service identity with least privilege,Duplicate trigger creates two tickets,Idempotent completions divided by runs,Team lead,POL-2,133,25,15,3,8,7
-NS-33,Dynamics 365 context,Synthetic account and case record,Case summary and next-step draft,Respect record-level access,Summary includes another account,Cross-account leakage count,Security reviewer,POL-3,136,26,12,4,5,4
-NS-34,Foundry model choice,"Latency, quality and residency constraints",Model decision card,Approve budget and data region,Cheaper model fails critical test,Quality score per cost unit,Analyst,POL-4,139,27,13,2,6,5
-NS-35,MCP tool registration,Tool schema and server identity,Tool catalog with scopes,Authenticate and log each invocation,Untrusted server gains broad access,Authorized calls divided by all calls,Agent maker,POL-5,142,28,14,3,7,6
+case_id,executive_decision,source_input,copilot_action,expected_artifact,decision_gate,challenge,outcome_measure
+NS-31,Vendor and partner review,Three proposed AI service options,Use Copilot to structure a due-diligence checklist,Partner decision matrix,Verify contractual and data claims,Marketing claims become evidence,Requirements with verified proof
+NS-32,Pilot operating model,30-seat cross-functional cohort,"Draft roles, support and review cadence",Pilot operating charter,"Sponsor, data owner and risk lead sign off",Pilot has licences but no support,Weekly active pilot users
+NS-33,Leadership role modelling,Three executive work patterns,Use Copilot to select visible leader practices,Leader demonstration plan,Leader shows reviewed outputs and limits,Leader promotes unverified output,Leaders demonstrating weekly
+NS-34,Change communication,Employee concerns and benefits,Draft FAQ and manager briefing in Word,Change narrative and FAQ,Include limits and escalation route,Message implies job replacement decision,Employee understanding score
+NS-35,Decision escalation,Pilot issue affecting customer outcome,"Map pause, fix and restart decisions",Escalation playbook,Named sponsor owns pause decision,Issue remains open while rollout expands,Median time to decision

@@ -1,6 +1,6 @@
-case_id,mechanism,synthetic_input,expected_output,control,failure_test,metric,role,source_id,monthly_volume,baseline_minutes,pilot_minutes,review_minutes,total_claims,supported_claims
-NS-46,Error budget,Failed action and unsafe answer logs,Error-budget burn chart,Pause rollout at threshold,Aggregate rate masks severe event,Severe failures per 1000 tasks,Service agent,POL-1,175,25,13,2,6,5
-NS-47,Feedback triage,User corrections and support tickets,Prioritized defect backlog,Preserve evidence and owner,Prompt tweak hides source defect,Median time to close defect,Team lead,POL-2,178,26,14,3,7,6
-NS-48,Experiment design,Pilot and comparison cohorts,Evaluation protocol,Avoid claiming causality from correlation,Different work mix biases result,Adjusted change in cycle time,Security reviewer,POL-3,181,27,15,4,8,7
-NS-49,Rollout wave gate,"Pilot QA, security and adoption data",Wave decision record,Named sponsor owns release,Wave launches without risk sign-off,Criteria passed divided by required,Analyst,POL-4,184,28,12,2,5,4
-NS-50,Retirement control,Unused agent and knowledge sources,Decommission checklist,Verify no dependent workflow remains,Connector remains active after agent removal,Orphaned privileged grants count,Agent maker,POL-5,187,22,13,3,6,5
+case_id,executive_decision,source_input,copilot_action,expected_artifact,decision_gate,challenge,outcome_measure
+NS-46,Quality scorecard,Sample outputs and evidence checks,Summarise quality results with Copilot,Quality trend chart,Any critical safety failure blocks scale,Good average masks one severe error,Critical failures per sample
+NS-47,Customer outcome,Service response and satisfaction data,Compare customer metrics before and after pilot,Customer-impact summary,Control for work mix and seasonality,AI usage is mistaken for customer benefit,Comparable cycle-time change
+NS-48,Board reporting,"Adoption, value, quality and risk metrics",Use Copilot in PowerPoint to draft a board update,One-page board scorecard,Every number has source and date,Board pack hides uncertainty,Claims with traceable evidence
+NS-49,Next-quarter roadmap,Pilot findings and capacity limits,Ask Copilot to sequence the next three waves,90-day roadmap with gates,Each wave has owner and stop rule,Scale outruns governance capacity,Wave gates met on schedule
+NS-50,Executive decision rehearsal,Board challenge questions,Use Copilot to surface counterarguments,"Final go, hold or stop record",Executive states assumptions and dissent,Decision is made on a polished demo,Decision quality rubric score

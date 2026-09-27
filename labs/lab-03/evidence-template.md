@@ -1,15 +1,23 @@
-# Evidence template
+# Executive evidence and decision record
 
-Source and version:__________
+All Northstar Service names, policies and values are synthetic training material. They are not a claim about a real company or a Microsoft tenant.
 
-Owner:__________
+Case ID: ____
 
-Transformation and output:__________
+Decision and audience: ____
 
-Control check:__________
+Approved source and version: ____
 
-Failure test and correction:__________
+Copilot output file or excerpt: ____
 
-Reviewer and date:__________
+Claims checked against source: ____
 
-Decision (pass/fail):__________
+Assumptions and uncertainty: ____
+
+Counterargument or failed test: ____
+
+Measure, baseline and period: ____
+
+Human owner and review date: ____
+
+Go / hold / revise with reason: ____

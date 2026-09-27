@@ -1,6 +1,6 @@
-case_id,mechanism,synthetic_input,expected_output,control,failure_test,metric,role,source_id,monthly_volume,baseline_minutes,pilot_minutes,review_minutes,total_claims,supported_claims
-NS-41,Golden test set,Representative questions and edge cases,Regression test dataset,Data owner approves test updates,Test set contains stale expected answer,Changed results per release,Service agent,POL-1,160,27,12,3,5,4
-NS-42,Time-saved estimate,Baseline 18 min and assisted 11 min,Net time-saving model,Validate observed samples,Gross saving ignores review effort,Net minutes saved per task,Team lead,POL-2,163,28,13,4,6,5
-NS-43,ROI model,"Seats, license cost, volume and wage rate",Conservative ROI worksheet,Separate measured from assumed inputs,Benefit double-counts the same task,(Value minus cost) divided by cost,Security reviewer,POL-3,166,22,14,2,7,6
-NS-44,License optimization,Seat use by department and month,Reallocation recommendation,Line manager confirms exceptions,Idle seats kept while pilot waits,Active seats divided by assigned seats,Analyst,POL-4,169,23,15,3,8,7
-NS-45,Latency budget,"Prompt, retrieval and tool timings",Latency waterfall,Do not remove safety checks for speed,Tool call dominates p95,p95 seconds per task,Agent maker,POL-5,172,24,12,4,5,4
+case_id,executive_decision,source_input,copilot_action,expected_artifact,decision_gate,challenge,outcome_measure
+NS-41,Excel value model,Synthetic task time and cost worksheet,Use Copilot in Excel to analyse observed changes,Net time-saved table,Review time is deducted from gross saving,Gross saving is sold as net value,Net minutes saved per task
+NS-42,Benefit confidence,Observed sample and management estimates,Ask Copilot to label evidence strength,Benefit confidence register,Assumption is never described as measured,Weak sample is extrapolated widely,Measured share of claimed value
+NS-43,Cost of ownership,"Seats, enablement and support costs",Use Copilot to compare total cost scenarios,Total-cost table,Include recurring change and review effort,License fee is the only cost,Cost per realised outcome
+NS-44,Sensitivity test,"Low, base and high adoption scenarios",Ask Copilot to vary key assumptions,Sensitivity chart with break-even point,Decision holds under a credible downside,Single optimistic case drives approval,Break-even adoption threshold
+NS-45,Investment decision,Value model and risk register,Draft a balanced investment memo in Word,"Fund, hold or stop recommendation",Sponsor signs conditions and budget,Recommendation ignores risk-adjusted cost,Conditions met before release

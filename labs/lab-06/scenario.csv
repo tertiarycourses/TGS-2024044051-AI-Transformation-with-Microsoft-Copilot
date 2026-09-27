@@ -1,6 +1,6 @@
-case_id,mechanism,synthetic_input,expected_output,control,failure_test,metric,role,source_id,monthly_volume,baseline_minutes,pilot_minutes,review_minutes,total_claims,supported_claims
-NS-26,Agent purpose contract,Helpdesk scope and user intents,Agent instruction card,Scope owner approves boundary,Agent answers outside approved domain,In-scope resolution rate,Service agent,POL-1,115,26,13,3,6,5
-NS-27,Knowledge-source curation,Policy PDFs and SharePoint site,Source register and index plan,Remove stale or duplicate files,Agent cites archived policy,Current-source citation rate,Team lead,POL-2,118,27,14,4,7,6
-NS-28,Citation evaluation,Twenty grounded test questions,Evaluation scorecard,Fail release below evidence threshold,Citation exists but does not support claim,Supported citations divided by citations,Security reviewer,POL-3,121,28,15,2,8,7
-NS-29,Copilot Studio topic routing,Password reset and leave-query intents,Topic decision flow,Escalate unsupported requests,Wrong topic triggers a tool,Correct route per test case,Analyst,POL-4,124,22,12,3,5,4
-NS-30,Connector action,Case-create API schema,Action contract and sample payload,Validate inputs and consent,Missing case owner causes bad write,Successful validated actions,Agent maker,POL-5,127,23,13,4,6,5
+case_id,executive_decision,source_input,copilot_action,expected_artifact,decision_gate,challenge,outcome_measure
+NS-26,Executive meeting,Synthetic leadership meeting transcript,Use Copilot in Teams to extract decisions and dissent,Decision and action log,Chair validates speaker and decision,AI assigns an action to wrong owner,Confirmed actions divided by extracted
+NS-27,Outlook decision flow,A crowded executive email thread,Use Copilot in Outlook to summarise asks and deadlines,Prioritised response draft,Executive reviews tone and commitments,Reply contains a false promise,Decisions made before deadline
+NS-28,Cross-functional handoff,Service and finance joint request,Ask Copilot to map handoffs and delays,Future-state handoff map,Keep accountable human at each gate,AI summary blurs ownership,Handoff time reduction
+NS-29,Copilot integration choice,Microsoft 365 and line-of-business options,"Compare use-as-is, extend and build choices",Integration decision card,Sponsor accepts cost and risk trade-off,Custom build is chosen without need,Business fit score per option
+NS-30,Agent opportunity,A repeatable policy-answer task,Describe where a bounded agent may help,Agent opportunity brief,Do not automate irreversible decisions,Agent scope expands beyond approval,In-scope resolution rate

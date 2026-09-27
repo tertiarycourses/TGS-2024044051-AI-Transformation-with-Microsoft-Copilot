@@ -1,44 +1,47 @@
-# Lab 02 — Prompt context window to PowerPoint executive story
+# Lab 02 — Copilot Chat decision brief
 
-TGS-2024044051 · v1.0 · 27 September 2026
+TGS-2024044051 · v2.0 · 27 September 2026
 
-## Scenario
-Northstar Service is a synthetic service organisation. All records and metrics in this lab are fictional. Use an approved training tenant if available; otherwise complete the same evidence analysis offline.
+**Microsoft tool focus:** Microsoft Copilot Chat
 
-## Materials
-- `scenario.csv`: 5 synthetic case records with task volumes, timing, claims and access values.
-- `roles.csv`: pilot roles, licences and approved data access.
-- `pilot-metrics.csv`: synthetic active seats, wage and license assumptions, and latency timings.
-- `ui-reference.png`: authentic Tertiary Infotech training-tenant UI example; your tenant may differ.
-- `source-pack.md`: synthetic policy excerpts, an outdated source and an injection test.
-- `evidence-template.md`: learner evidence form.
-- Microsoft 365 Copilot or Copilot Studio only when your trainer has provided access.
+All Northstar Service names, policies and values are synthetic training material. They are not a claim about a real company or a Microsoft tenant.
 
-## Procedure
-1. **Prompt context window.** Open the matching row in `scenario.csv`, then check its role against `roles.csv` and source against `source-pack.md`. Record the source version and owner. Separate task, context, constraints and format. Calculate net minutes saved as baseline minus pilot minus review, and verify supported claims do not exceed total claims. Save the output as `01-prompt-context-window.md`. Check: Never paste personal data into unmanaged chat. Negative test: Answer omits policy exception. Measure: Grounded claims divided by claims.
-2. **Grounded retrieval.** Open the matching row in `scenario.csv`, then check its role against `roles.csv` and source against `source-pack.md`. Record the source version and owner. Retrieve accessible passages before generation. Calculate net minutes saved as baseline minus pilot minus review, and verify supported claims do not exceed total claims. Save the output as `02-grounded-retrieval.md`. Check: Verify source version and user permission. Negative test: Citation points to superseded policy. Measure: Supported answer statements divided by total.
-3. **Word proposal draft.** Open the matching row in `scenario.csv`, then check its role against `roles.csv` and source against `source-pack.md`. Record the source version and owner. Generate structure then compare to source register. Calculate net minutes saved as baseline minus pilot minus review, and verify supported claims do not exceed total claims. Save the output as `03-word-proposal-draft.md`. Check: Human owns final facts and approval. Negative test: Unsupported cost claim enters draft. Measure: Verified claims divided by total claims.
-4. **Excel service analysis.** Open the matching row in `scenario.csv`, then check its role against `roles.csv` and source against `source-pack.md`. Record the source version and owner. Aggregate cycle time by issue category. Calculate net minutes saved as baseline minus pilot minus review, and verify supported claims do not exceed total claims. Save the output as `04-excel-service-analysis.md`. Check: Check formula range and outliers. Negative test: Blank dates skew mean. Measure: Median cycle time by category.
-5. **PowerPoint executive story.** Open the matching row in `scenario.csv`, then check its role against `roles.csv` and source against `source-pack.md`. Record the source version and owner. Create a three-message decision deck. Calculate net minutes saved as baseline minus pilot minus review, and verify supported claims do not exceed total claims. Save the output as `05-powerpoint-executive-story.md`. Check: Presenter validates every number. Negative test: Chart title and source mismatch. Measure: Correct figures divided by checked figures.
+## Executive outcome
+Produce five short, source-backed decisions for copilot chat decision brief. Each decision must show a human owner, uncertainty, measurable result and a go/hold/revise gate.
 
-## Copy-ready Copilot prompt
-```text
-You are supporting a synthetic Northstar Service training case. Use only the provided scenario row. Identify your sources and assumptions. Complete the requested transformation, then list every claim that requires human verification. Never send, publish, grant access, or change production data.
-```
+## Materials in this folder
+- `source-pack.md` — fictional organisation context, policy and five case facts.
+- `scenario.csv` — five decisions, expected outputs and challenge checks.
+- `prompt-cards.md` — copy-ready prompts for each case.
+- `executive-brief.docx` — editable briefing input.
+- `value-model.csv` and `value-model.xlsx` — synthetic business values and formulas.
+- `evidence-template.md` — decision record to copy for each case.
+- `workflow-reference.png` — official Microsoft Support UI example for orientation, not evidence of this lab.
 
-## Acceptance
-- Five output artifacts correspond to the five rows in `scenario.csv`.
-- Recompute `net_minutes_saved` independently from the three timing columns; record the source version used.
-- For ROI use the role’s hourly value and license cost from `pilot-metrics.csv` as labelled synthetic assumptions.
-- For latency, add retrieval, model and tool component times for the same percentile; do not mix p50 with p95.
-- Record whether the role may open the source; do not use the injected or retired source as an instruction.
-- Every artifact records source, method, reviewer, date and a pass/fail decision.
-- At least one failed or uncertain test is recorded with a correction.
-- No real customer or tenant data appears in submitted evidence.
+## Steps
+1. Read BRD-1 to BRD-4 in `source-pack.md` and identify which rule applies to your case.
+2. Open `scenario.csv` and select one case ID. Note its intended decision, named output, challenge and outcome measure.
+3. In Microsoft Copilot Chat, start a new work chat and add the approved synthetic source.
+4. Copy the matching prompt from `prompt-cards.md`. Provide only the synthetic source content. Ask Copilot for a first draft, cited facts, assumptions and counterargument.
+5. Compare each material statement and number with `source-pack.md` or `value-model.xlsx`. Correct or remove unsupported claims. Recalculate net minutes: baseline minus Copilot time minus human review time.
+6. Record the decision in a copy of `evidence-template.md`. State the source, evidence, owner, date, outcome measure and go/hold/revise conclusion.
+7. Repeat steps 2–6 for the other four case IDs. Submit all five decisions and the reviewed executive output.
+
+## Acceptance checks
+- Five case IDs have five reviewed decision records.
+- Every claim or value used to justify a decision cites the supplied source.
+- Every record states the strongest challenge or failed test and how it was resolved.
+- Any monetary value is labelled as a synthetic assumption, not measured savings.
+- The human owner approves external commitments and high-impact decisions.
+- The output says “offline simulation” when the live Copilot feature was unavailable.
 
 ## Troubleshooting
-If the Microsoft feature is unavailable, state the licence/policy limitation and use the synthetic row to complete the same decision and validation evidence. Do not fabricate a live configuration.
+If Copilot cannot see the source, check your work account and licensing with the trainer. Continue with the local files and mark the work offline. If Copilot invents a figure, remove it and ask for a source-based revision. If two sources conflict, hold the decision and name the owner who will resolve the conflict.
 
 ## UI reference
-![Illustrative Microsoft workflow from a separate synthetic training tenant](ui-reference.png)
-This screenshot orients you to a Microsoft workspace. It is not evidence of your own configuration; submit your own screenshot or clearly labelled offline artifact.
+![Official Microsoft Support UI example](workflow-reference.png)
+Source: https://support.microsoft.com/en-us/microsoft-365-copilot/draft-content-with-microsoft-365-copilot-chat-and-copilot-pages. Interface and licensing may differ in your tenant. Do not submit this image as your own result.
+
+## Microsoft product references
+- https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot
+- https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-controls/security-governance

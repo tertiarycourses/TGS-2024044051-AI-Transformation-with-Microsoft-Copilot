@@ -1,78 +1,91 @@
-TITLE='AI Transformation with Microsoft Copilot'
-CODE='TGS-2024044051'
-VERSION='v1.0'
-DATE='27 September 2026'
-URL='https://www.tertiarycourses.com.sg/wsq-ai-transformation-with-microsoft-copilot.html'
-OUTCOMES=[
-'Develop technology implementation plans and business processes for Microsoft Copilot.',
-'Develop control procedures for Microsoft Copilot to manage security.',
-'Evaluate the integration of Microsoft Copilot to ensure alignment with business objectives.',
-'Develop optimization plans for Microsoft Copilot to improve business operations.']
-TOPICS=[
-'Microsoft 365 Copilot Implementation and Business Process Transformation',
-'Microsoft Copilot Administration, Security and Responsible AI',
-'Copilot Integration, AI Agents and Cross-Platform Workflows',
-'AI Optimization, Performance Monitoring and Business Value Assessment']
-# Each row: mechanism | input evidence | transformation or configuration | output artifact | gate or owner | failure signature | measurable test
-RAW=[
-# Topic 1
-('Tenant readiness','Microsoft 365 tenant inventory','Check identities, data estate and licensed workload availability','Readiness register with owner and gap','Admin signs off app and data prerequisites','Licensed user lacks a supported app or data source','Eligible users divided by target users'),
-('License allocation','30 pilot seats and role list','Match entitlement to high-frequency document tasks','License assignment and cohort list','Approve seats against role and cost center','Seat assigned but service plan disabled','Active pilot users divided by assigned seats'),
-('Graph permission scope','SharePoint file ACL and test identities','Compare search results under user A and user B','Access matrix with allowed files','Least privilege and owner review','Overshared file appears in both result sets','Unexpected accessible files count'),
-('Business-process mapping','Service request intake with six handoffs','Mark drafting, lookup and approval steps','Current-to-future swimlane','Keep human approval on customer-facing send','Automation bypasses approval','Median handoff time in minutes'),
-('Opportunity scoring','Ten candidate workflows','Score volume, time, data quality and risk','Ranked use-case backlog','Reject use case with ungoverned sensitive data','High score hides missing data owner','Weighted score per use case'),
-('Prompt context window','Customer email and policy excerpts','Separate task, context, constraints and format','Reusable prompt card','Never paste personal data into unmanaged chat','Answer omits policy exception','Grounded claims divided by claims'),
-('Grounded retrieval','Approved policy file and user query','Retrieve accessible passages before generation','Answer with source citations','Verify source version and user permission','Citation points to superseded policy','Supported answer statements divided by total'),
-('Word proposal draft','Synthetic service improvement brief','Generate structure then compare to source register','Draft proposal with evidence comments','Human owns final facts and approval','Unsupported cost claim enters draft','Verified claims divided by total claims'),
-('Excel service analysis','Synthetic ticket table: 120 rows','Aggregate cycle time by issue category','Pivot table and chart','Check formula range and outliers','Blank dates skew mean','Median cycle time by category'),
-('PowerPoint executive story','Approved Word findings and Excel chart','Create a three-message decision deck','Five-slide review deck','Presenter validates every number','Chart title and source mismatch','Correct figures divided by checked figures'),
-('Outlook response workflow','Synthetic customer escalation email','Draft acknowledgement and response options','Reviewed reply with owner and deadline','Send remains a human action','Tone implies an unapproved commitment','Replies with explicit next owner'),
-('Teams meeting synthesis','Synthetic transcript with actions','Extract decisions, dissent and open questions','Action register with timestamps','Meeting owner confirms transcript accuracy','Speaker attribution is wrong','Confirmed actions divided by extracted actions'),
-('Adoption rollout','Three departments and pilot feedback','Sequence champions, learning and support','30-60-90 day rollout plan','Gate wave two on measured quality','Low adoption despite licenses','Weekly active usage by cohort'),
-# Topic 2
-('Identity and MFA','User roles and sign-in policy','Require appropriate identity assurance','Conditional-access decision log','Security team owns exception process','Shared account bypasses attribution','Protected sign-ins divided by sign-ins'),
-('Sensitivity labels','Public, internal and confidential files','Map labels to sharing and Copilot exposure','Label policy matrix','Data owner reviews label changes','Confidential file labelled public','Mislabelled sampled files count'),
-('DLP boundaries','Prompt containing synthetic account number','Block or warn for restricted data movement','DLP test evidence','Policy owner approves exceptions','Sensitive output leaves approved boundary','Blocked risky attempts per test set'),
-('SharePoint oversharing','Site members, visitors and anonymous links','Review inherited access and link types','Remediation ticket list','Owner removes broad access before pilot','Copilot surfaces a broadly shared secret','High-risk links remediated'),
-('Retention and records','Contract lifecycle and retention schedule','Apply record class to source documents','Retention decision table','Records officer approves disposal','Old draft retrieved as current policy','Current-version retrieval rate'),
-('Audit event trail','Agent action and user identity','Capture time, actor, source and action','Traceable audit record','Admin preserves logs per policy','Action cannot be attributed to a user','Trace-complete actions divided by actions'),
-('Prompt-injection boundary','Document with an embedded hostile instruction','Treat retrieved text as data, not instruction','Injection test and refusal trace','Tool action requires explicit authorization','Agent follows source text as a command','Injected commands ignored per test set'),
-('Fabrication review','Answer with five factual claims','Check each claim against current citations','Claim-verification worksheet','Human reviewer signs high-impact output','Plausible unsupported number survives','Supported claims divided by claims'),
-('Tool permission design','Read and write connector scopes','Separate read-only pilot from write actions','Permission grant register','Entra admin consents only minimum scope','Write tool used in a read workflow','Unused privileged grants count'),
-('Environment policy','Dev, test and production environments','Apply connector and publishing policy','Environment control matrix','Promote only after test evidence','Maker publishes from unrestricted default','Policy violations by environment'),
-('Incident response','Synthetic disclosure report','Contain, preserve evidence, notify owner','Incident timeline and action log','Security owner determines escalation','Evidence lost during agent disable','Time to containment in minutes'),
-('Human decision gate','Draft customer refund recommendation','Require reviewer before irreversible action','Approval record with rationale','Named business owner signs release','Workflow auto-issues refund','Unapproved actions count'),
-# Topic 3
-('Agent purpose contract','Helpdesk scope and user intents','Define allowed requests and refusals','Agent instruction card','Scope owner approves boundary','Agent answers outside approved domain','In-scope resolution rate'),
-('Knowledge-source curation','Policy PDFs and SharePoint site','Choose authoritative files with metadata','Source register and index plan','Remove stale or duplicate files','Agent cites archived policy','Current-source citation rate'),
-('Citation evaluation','Twenty grounded test questions','Compare answers to source passages','Evaluation scorecard','Fail release below evidence threshold','Citation exists but does not support claim','Supported citations divided by citations'),
-('Copilot Studio topic routing','Password reset and leave-query intents','Route to topic or generative answer','Topic decision flow','Escalate unsupported requests','Wrong topic triggers a tool','Correct route per test case'),
-('Connector action','Case-create API schema','Map validated input to action parameters','Action contract and sample payload','Validate inputs and consent','Missing case owner causes bad write','Successful validated actions'),
-('Approval action','Low and high value requests','Branch at amount threshold','Approval path with actor and timestamp','No silent auto-approval','High-value request takes fast path','Threshold breaches count'),
-('Power Automate flow','Form submission and structured fields','Trigger, validate, approve, write, notify','Flow run trace','Use service identity with least privilege','Duplicate trigger creates two tickets','Idempotent completions divided by runs'),
-('Dynamics 365 context','Synthetic account and case record','Ground response in permitted CRM fields','Case summary and next-step draft','Respect record-level access','Summary includes another account','Cross-account leakage count'),
-('Foundry model choice','Latency, quality and residency constraints','Compare candidate models on test set','Model decision card','Approve budget and data region','Cheaper model fails critical test','Quality score per cost unit'),
-('MCP tool registration','Tool schema and server identity','Expose a bounded tool to an agent','Tool catalog with scopes','Authenticate and log each invocation','Untrusted server gains broad access','Authorized calls divided by all calls'),
-('A2A handoff','Service agent and billing agent contract','Send task with identity and context limits','Handoff trace and result','Entra authorization at endpoint','Receiving agent loses context boundary','Successful authorized handoffs'),
-('Multi-agent orchestration','Research, policy and drafting subagents','Sequence outputs with conflict resolution','Orchestration map and provenance','Supervisor approves final answer','Agents amplify an unsupported claim','Conflicts detected before release'),
-('Cross-platform error handling','CRM timeout and retry policy','Retry safely then queue for human','Dead-letter record with correlation ID','No duplicate write on retry','Retry creates duplicate case','Duplicate-free retries divided by retries'),
-# Topic 4
-('Usage telemetry','Weekly usage export by cohort','Join license, active use and role','Adoption dashboard','Aggregate before sharing individual trends','Metric counts sign-in as productive use','Weekly active users divided by licensed'),
-('Agent quality rubric','Twenty task prompts with known answers','Score accuracy, evidence and safety','Evaluation matrix','Block release on critical safety failure','High average hides one severe error','Pass rate per risk tier'),
-('Golden test set','Representative questions and edge cases','Version expected results and sources','Regression test dataset','Data owner approves test updates','Test set contains stale expected answer','Changed results per release'),
-('Time-saved estimate','Baseline 18 min and assisted 11 min','Subtract review time and scale by volume','Net time-saving model','Validate observed samples','Gross saving ignores review effort','Net minutes saved per task'),
-('ROI model','Seats, license cost, volume and wage rate','Compare realized value to total costs','Conservative ROI worksheet','Separate measured from assumed inputs','Benefit double-counts the same task','(Value minus cost) divided by cost'),
-('License optimization','Seat use by department and month','Reclaim idle seats after review','Reallocation recommendation','Line manager confirms exceptions','Idle seats kept while pilot waits','Active seats divided by assigned seats'),
-('Latency budget','Prompt, retrieval and tool timings','Decompose p50 and p95 response time','Latency waterfall','Do not remove safety checks for speed','Tool call dominates p95','p95 seconds per task'),
-('Error budget','Failed action and unsafe answer logs','Set severity-weighted threshold','Error-budget burn chart','Pause rollout at threshold','Aggregate rate masks severe event','Severe failures per 1000 tasks'),
-('Feedback triage','User corrections and support tickets','Tag source, prompt, policy or tool cause','Prioritized defect backlog','Preserve evidence and owner','Prompt tweak hides source defect','Median time to close defect'),
-('Experiment design','Pilot and comparison cohorts','Hold task and measurement constant','Evaluation protocol','Avoid claiming causality from correlation','Different work mix biases result','Adjusted change in cycle time'),
-('Rollout wave gate','Pilot QA, security and adoption data','Evaluate go or hold criteria','Wave decision record','Named sponsor owns release','Wave launches without risk sign-off','Criteria passed divided by required'),
-('Retirement control','Unused agent and knowledge sources','Disable access and retain required records','Decommission checklist','Verify no dependent workflow remains','Connector remains active after agent removal','Orphaned privileged grants count'),
+"""Single source for the executive, outcomes-led v2.0 release."""
+TITLE = 'AI Transformation with Microsoft Copilot'
+CODE = 'TGS-2024044051'
+VERSION = 'v2.0'
+DATE = '27 September 2026'
+URL = 'https://www.tertiarycourses.com.sg/wsq-ai-transformation-with-microsoft-copilot.html'
+OUTCOMES = [
+    'Develop technology implementation plans and business processes for Microsoft Copilot.',
+    'Develop control procedures for Microsoft Copilot to manage security.',
+    'Evaluate the integration of Microsoft Copilot to ensure alignment with business objectives.',
+    'Develop optimization plans for Microsoft Copilot to improve business operations.',
 ]
-assert len(RAW)==50,len(RAW)
-SOURCES=[
-'https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture',
-'https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-faq',
-'https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-improve',
-'https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting']
+TOPICS = [
+    'Set the Copilot Transformation Strategy and Lead by Example',
+    'Govern Copilot Use and Protect Business Decisions',
+    'Integrate Copilot into the Executive Operating Model',
+    'Measure Value, Scale Adoption and Report to the Board',
+]
+# Each executive case: decision | synthetic business input | Copilot use or management action |
+# board-ready output | decision gate | failure to challenge | outcome measure.
+RAW = [
+('Transformation ambition','A service division misses response targets','Use Copilot Chat to compare three improvement ambitions','One-page transformation mandate','CEO approves a measurable business problem','Ambition is only a technology slogan','Target service-cycle reduction'),
+('Value pool map','Five departments and task-volume estimates','Ask Copilot to cluster recurring knowledge-work opportunities','Value pool map with owner','Keep only opportunities tied to a named outcome','High-volume activity has no customer value','Annual addressable hours by pool'),
+('Executive sponsor','Four competing leadership priorities','Draft a sponsor brief in Word with Copilot','Sponsor decision and named accountable owner','Sponsor commits a review cadence','No executive owns the benefit','Sponsor decisions closed on time'),
+('Stakeholder alignment','Sales, service, finance and risk concerns','Summarise the competing positions with Copilot','Stakeholder trade-off matrix','Record dissent before selecting a pilot','Risk concern is omitted from the brief','Unresolved stakeholder objections'),
+('Success definition','Baseline cycle time and quality scores','Use Copilot to draft a result statement','Outcome scorecard with baseline and target','Board accepts denominator and time window','Activity count is presented as impact','Target met on comparable work'),
+('Copilot Chat briefing','Synthetic board pack and policy extract','Ask Copilot Chat for a sourced executive summary','Five-point decision brief','Verify each material claim against the pack','Plausible but unsupported claim','Supported claims divided by claims'),
+('Question refinement','A broad request for better service','Refine goal, context, constraints and format in Copilot','Reusable executive prompt','Prompt names audience and decision','Response is polished but irrelevant','Decision-relevant points per answer'),
+('Source challenge','Two contradictory policy versions','Ask Copilot to identify differences and uncertainty','Source conflict register','Owner resolves the authoritative version','Retired document becomes the basis','Current-source citation rate'),
+('Scenario comparison','Three service improvement options','Ask Copilot for assumptions and trade-offs','Option comparison table','Compare options with the same criteria','One option gets a favourable metric','Criteria applied to all options'),
+('Executive follow-up','A decision brief with open questions','Use Copilot to list evidence gaps and owners','Follow-up action register','No recommendation without missing facts','Open question disappears from summary','Critical gaps assigned to owners'),
+('Word strategy memo','A synthetic service improvement brief','Draft a decision memo with Copilot in Word','Two-page strategy memo','Human executive signs the recommendation','Draft invents a savings figure','Verified material claims'),
+('Recommendation logic','Three options and a cost ceiling','Ask Copilot to test the logic of a recommendation','Recommendation with assumptions','State rejected alternatives and rationale','Trade-off is hidden','Board questions answered with evidence'),
+('PowerPoint board story','Approved strategy memo and metrics','Create a concise executive deck with Copilot in PowerPoint','Five-slide board narrative','Every chart traces to approved numbers','Slide claims exceed the source','Figures verified before review'),
+('Decision appendix','Risk and sensitivity notes','Use Copilot to structure board Q&A','Board appendix and question log','Distinguish evidence from assumptions','Appendix repeats unsupported claims','Questions with grounded answers'),
+('Leadership communication','Approved board decision','Draft a leader message with Copilot in Outlook','Change announcement for review','No send until approved by sponsor','Message promises unapproved outcomes','Message comprehension in pilot survey'),
+('Information boundary','Synthetic confidential account file','Decide which content may be used with Copilot','Data-use decision table','Data owner approves permitted sources','Sensitive source is broadly shared','Restricted exposures found in review'),
+('Permission reality','Two roles with different access','Request the same summary under each approved identity','Access-test evidence record','Security owner reviews unexpected access','User receives material outside role','Unexpected accessible files'),
+('Source reliability','Current and retired policies','Compare Copilot answer with authoritative source','Claim-verification worksheet','Reviewer checks every material statement','Retired policy cited as current','Supported claims divided by claims'),
+('Human approval','Draft external customer commitment','Assign a human approval point before release','Approval decision record','Named owner signs external commitment','Copilot text is sent without review','Unapproved external actions'),
+('Responsible-use rule','A sensitive executive scenario','Draft a plain-language use rule in Word','One-page responsible-use charter','Legal and risk owners approve wording','Charter is too vague to apply','Exceptions resolved within SLA'),
+('Risk appetite','Five use cases with different consequences','Rank harms, controls and owners with Copilot','Risk-tier matrix','High-impact uses require stronger review','All use cases share one weak gate','High-risk use cases with owner'),
+('Incident response','Synthetic disclosure near miss','Ask Copilot to organise facts and response options','Incident decision timeline','Security owner determines escalation','Evidence is lost or blame is assigned early','Time to containment'),
+('Quality challenge','Confident answer with two errors','Use Copilot as a critic, then verify manually','Red-team finding and correction','Release only after material errors corrected','Fluent answer is treated as proof','Critical errors per review set'),
+('Policy ownership','Business, IT, legal and HR responsibilities','Draft a RACI with Copilot','Governance RACI','No control lacks a decision owner','Everyone assumes IT owns content quality','Controls with named owners'),
+('Board assurance','Pilot results and unresolved risks','Summarise assurance evidence with Copilot','Board risk-and-control dashboard','Disclose unresolved material risks','Green status masks a severe issue','Critical issues overdue'),
+('Executive meeting','Synthetic leadership meeting transcript','Use Copilot in Teams to extract decisions and dissent','Decision and action log','Chair validates speaker and decision','AI assigns an action to wrong owner','Confirmed actions divided by extracted'),
+('Outlook decision flow','A crowded executive email thread','Use Copilot in Outlook to summarise asks and deadlines','Prioritised response draft','Executive reviews tone and commitments','Reply contains a false promise','Decisions made before deadline'),
+('Cross-functional handoff','Service and finance joint request','Ask Copilot to map handoffs and delays','Future-state handoff map','Keep accountable human at each gate','AI summary blurs ownership','Handoff time reduction'),
+('Copilot integration choice','Microsoft 365 and line-of-business options','Compare use-as-is, extend and build choices','Integration decision card','Sponsor accepts cost and risk trade-off','Custom build is chosen without need','Business fit score per option'),
+('Agent opportunity','A repeatable policy-answer task','Describe where a bounded agent may help','Agent opportunity brief','Do not automate irreversible decisions','Agent scope expands beyond approval','In-scope resolution rate'),
+('Vendor and partner review','Three proposed AI service options','Use Copilot to structure a due-diligence checklist','Partner decision matrix','Verify contractual and data claims','Marketing claims become evidence','Requirements with verified proof'),
+('Pilot operating model','30-seat cross-functional cohort','Draft roles, support and review cadence','Pilot operating charter','Sponsor, data owner and risk lead sign off','Pilot has licences but no support','Weekly active pilot users'),
+('Leadership role modelling','Three executive work patterns','Use Copilot to select visible leader practices','Leader demonstration plan','Leader shows reviewed outputs and limits','Leader promotes unverified output','Leaders demonstrating weekly'),
+('Change communication','Employee concerns and benefits','Draft FAQ and manager briefing in Word','Change narrative and FAQ','Include limits and escalation route','Message implies job replacement decision','Employee understanding score'),
+('Decision escalation','Pilot issue affecting customer outcome','Map pause, fix and restart decisions','Escalation playbook','Named sponsor owns pause decision','Issue remains open while rollout expands','Median time to decision'),
+('Use-case portfolio','Twelve candidate workflows','Prioritise volume, value, feasibility and risk','Ranked opportunity portfolio','Reject ownerless or unsafe use case','Highest score hides weak data','Validated value per use case'),
+('Adoption baseline','Usage by role and department','Compare active use with licensed seats','Adoption baseline chart','Separate sign-in from productive use','Licence assignment counted as adoption','Weekly active users per cohort'),
+('Enablement design','Three role-specific skill gaps','Ask Copilot to draft role-based coaching plans','90-day enablement calendar','Manager commits time for practice','One generic training suits no one','Practice completion by role'),
+('Feedback loop','Pilot questions and complaints','Cluster feedback themes with Copilot','Prioritised improvement backlog','Assign owner and due date','Prompt advice hides a source defect','Median defect closure time'),
+('Scale gate','Pilot adoption, quality and risk data','Prepare go, hold or stop recommendation','Wave-two decision paper','Every critical threshold passes','Average score hides a severe failure','Criteria passed divided by required'),
+('Excel value model','Synthetic task time and cost worksheet','Use Copilot in Excel to analyse observed changes','Net time-saved table','Review time is deducted from gross saving','Gross saving is sold as net value','Net minutes saved per task'),
+('Benefit confidence','Observed sample and management estimates','Ask Copilot to label evidence strength','Benefit confidence register','Assumption is never described as measured','Weak sample is extrapolated widely','Measured share of claimed value'),
+('Cost of ownership','Seats, enablement and support costs','Use Copilot to compare total cost scenarios','Total-cost table','Include recurring change and review effort','License fee is the only cost','Cost per realised outcome'),
+('Sensitivity test','Low, base and high adoption scenarios','Ask Copilot to vary key assumptions','Sensitivity chart with break-even point','Decision holds under a credible downside','Single optimistic case drives approval','Break-even adoption threshold'),
+('Investment decision','Value model and risk register','Draft a balanced investment memo in Word','Fund, hold or stop recommendation','Sponsor signs conditions and budget','Recommendation ignores risk-adjusted cost','Conditions met before release'),
+('Quality scorecard','Sample outputs and evidence checks','Summarise quality results with Copilot','Quality trend chart','Any critical safety failure blocks scale','Good average masks one severe error','Critical failures per sample'),
+('Customer outcome','Service response and satisfaction data','Compare customer metrics before and after pilot','Customer-impact summary','Control for work mix and seasonality','AI usage is mistaken for customer benefit','Comparable cycle-time change'),
+('Board reporting','Adoption, value, quality and risk metrics','Use Copilot in PowerPoint to draft a board update','One-page board scorecard','Every number has source and date','Board pack hides uncertainty','Claims with traceable evidence'),
+('Next-quarter roadmap','Pilot findings and capacity limits','Ask Copilot to sequence the next three waves','90-day roadmap with gates','Each wave has owner and stop rule','Scale outruns governance capacity','Wave gates met on schedule'),
+('Executive decision rehearsal','Board challenge questions','Use Copilot to surface counterarguments','Final go, hold or stop record','Executive states assumptions and dissent','Decision is made on a polished demo','Decision quality rubric score'),
+]
+assert len(RAW) == 50
+SOURCES = [
+'https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/',
+'https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-controls/security-governance',
+'https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot',
+'https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/measurement-reporting',
+]
+LAB_NAMES = [
+'Executive transformation mandate', 'Copilot Chat decision brief', 'Board memo and story',
+'Information and decision boundaries', 'Governance and assurance charter',
+'Executive meeting and communication', 'Integration and operating model',
+'Adoption and scale plan', 'Investment and value case', 'Board scorecard and decision',
+]
+LAB_APPS = [
+'Microsoft Copilot Chat', 'Microsoft Copilot Chat', 'Copilot in Word and PowerPoint',
+'Microsoft Copilot Chat', 'Copilot in Word', 'Copilot in Teams and Outlook',
+'Microsoft Copilot Chat and Word', 'Microsoft Copilot Chat and Word',
+'Copilot in Excel and Word', 'Copilot in PowerPoint and Chat',
+]

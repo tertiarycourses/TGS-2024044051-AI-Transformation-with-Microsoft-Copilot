@@ -1,18 +1,12 @@
 # AI Transformation with Microsoft Copilot
 
-A three-day WSQ course on planning, controlling, integrating and measuring Microsoft Copilot in business workflows.
+**TGS-2024044051 · WSQ · v2.0 · 3 days / 24 hours**
 
-| Course detail | Information |
-|---|---|
-| Course code | `TGS-2024044051` |
-| Programme | WSQ |
-| Duration | 3 days, 24 hours (22 training + 2 assessment) |
-| Registration | [View course details and register](https://www.tertiarycourses.com.sg/wsq-ai-transformation-with-microsoft-copilot.html) |
-| Funding | Up to 70% of the course fee for eligible learners. Eligibility and terms apply; check the current course page. |
+An executive course on using Microsoft Copilot to frame business decisions, govern responsible use, lead adoption and measure outcomes. Learners use Copilot Chat, Word, PowerPoint, Outlook, Teams and Excel with a fictional Northstar Service case. No coding or agent development is required.
 
-## About the course
+[Official course page and registration](https://www.tertiarycourses.com.sg/wsq-ai-transformation-with-microsoft-copilot.html)
 
-Learners work through a synthetic Northstar Service transformation, from Microsoft 365 Copilot readiness and secure data access to Copilot Studio agents, controlled actions and value measurement. The activities use synthetic data and can be completed as an offline evidence exercise when tenant features are unavailable.
+Eligible learners may receive up to 70% WSQ funding; eligibility and terms apply. Check the course page for current fees and funding.
 
 ## Learning outcomes
 
@@ -21,39 +15,38 @@ Learners work through a synthetic Northstar Service transformation, from Microso
 3. Evaluate the integration of Microsoft Copilot to ensure alignment with business objectives.
 4. Develop optimization plans for Microsoft Copilot to improve business operations.
 
-## Topics covered
+## Executive topics
 
-1. Microsoft 365 Copilot Implementation and Business Process Transformation
-2. Microsoft Copilot Administration, Security and Responsible AI
-3. Copilot Integration, AI Agents and Cross-Platform Workflows
-4. AI Optimization, Performance Monitoring and Business Value Assessment
+1. Set the Copilot Transformation Strategy and Lead by Example
+2. Govern Copilot Use and Protect Business Decisions
+3. Integrate Copilot into the Executive Operating Model
+4. Measure Value, Scale Adoption and Report to the Board
 
-## Labs
+## Courseware
 
-- [Lab 01: Tenant readiness to Opportunity scoring](labs/lab-01/README.md)
-- [Lab 02: Prompt context window to PowerPoint executive story](labs/lab-02/README.md)
-- [Lab 03: Outlook response workflow to Sensitivity labels](labs/lab-03/README.md)
-- [Lab 04: DLP boundaries to Prompt-injection boundary](labs/lab-04/README.md)
-- [Lab 05: Fabrication review to Human decision gate](labs/lab-05/README.md)
-- [Lab 06: Agent purpose contract to Connector action](labs/lab-06/README.md)
-- [Lab 07: Approval action to MCP tool registration](labs/lab-07/README.md)
-- [Lab 08: A2A handoff to Agent quality rubric](labs/lab-08/README.md)
-- [Lab 09: Golden test set to Latency budget](labs/lab-09/README.md)
-- [Lab 10: Error budget to Retirement control](labs/lab-10/README.md)
+- [Trainer slides PPTX](courseware/AI-Transformation-with-Microsoft-Copilot-v2.0.pptx) and [PDF](courseware/AI-Transformation-with-Microsoft-Copilot-v2.0.pdf)
+- [Learner Guide DOCX](courseware/LG-AI-Transformation-with-Microsoft-Copilot.docx), [PDF](courseware/LG-AI-Transformation-with-Microsoft-Copilot.pdf), and [Markdown](LG-AI-Transformation-with-Microsoft-Copilot.md)
+- [Lesson Plan DOCX](courseware/LP-AI-Transformation-with-Microsoft-Copilot.docx) and [PDF](courseware/LP-AI-Transformation-with-Microsoft-Copilot.pdf)
+- [Facilitator Guide DOCX](courseware/FG-AI-Transformation-with-Microsoft-Copilot.docx) and [PDF](courseware/FG-AI-Transformation-with-Microsoft-Copilot.pdf)
+- [Assessment Plan DOCX](courseware/AP-AI-Transformation-with-Microsoft-Copilot.docx) and [PDF](courseware/AP-AI-Transformation-with-Microsoft-Copilot.pdf)
+- Ten self-contained executive labs, each with source pack, prompts, data, editable briefing document, value workbook and printable PDFs:
+  1. [Executive transformation mandate](labs/lab-01/README.md)
+  2. [Copilot Chat decision brief](labs/lab-02/README.md)
+  3. [Board memo and story](labs/lab-03/README.md)
+  4. [Information and decision boundaries](labs/lab-04/README.md)
+  5. [Governance and assurance charter](labs/lab-05/README.md)
+  6. [Executive meeting and communication](labs/lab-06/README.md)
+  7. [Integration and operating model](labs/lab-07/README.md)
+  8. [Adoption and scale plan](labs/lab-08/README.md)
+  9. [Investment and value case](labs/lab-09/README.md)
+  10. [Board scorecard and decision](labs/lab-10/README.md)
+- [Course brochure DOCX](brochure/TGS-2024044051-AI-Transformation-with-Microsoft-Copilot-Brochure-v2.0.docx) and [PDF](brochure/TGS-2024044051-AI-Transformation-with-Microsoft-Copilot-Brochure-v2.0.pdf)
+- [Change log](courseware/CHANGELOG.md)
 
-## Public package
+## Reference and assessment boundary
 
-- [Trainer slides (PowerPoint)](courseware/AI-Transformation-with-Microsoft-Copilot-v1.0.pptx) and [slides PDF](courseware/AI-Transformation-with-Microsoft-Copilot-v1.0.pdf)
-- [Learner Guide (DOCX)](courseware/LG-AI-Transformation-with-Microsoft-Copilot.docx), [PDF](courseware/LG-AI-Transformation-with-Microsoft-Copilot.pdf), and [Markdown](LG-AI-Transformation-with-Microsoft-Copilot.md)
-- [Lesson Plan (DOCX)](courseware/LP-AI-Transformation-with-Microsoft-Copilot.docx) and [PDF](courseware/LP-AI-Transformation-with-Microsoft-Copilot.pdf)
-- [Lab index](labs/README.md) with editable Markdown, printable PDFs and synthetic data in every lab folder
-- [Current course brochure (PDF)](brochure/TGS-2024044051-AI-Transformation-with-Microsoft-Copilot-Brochure-v1.0.pdf) and [editable DOCX](brochure/TGS-2024044051-AI-Transformation-with-Microsoft-Copilot-Brochure-v1.0.docx)
-- [Change log](courseware/CHANGELOG.md) · v1.0, 27 September 2026
+Microsoft [AI Business Professional (AB-730)](https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/) informs direct Copilot business use. [AB-100](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/) informs strategy, governance and outcome judgment. This WSQ course does not claim Microsoft certification preparation.
 
-## Distribution boundary
+The candidate Written Assessment and Practical Performance papers are distributed through the controlled course channel. Answer keys and assessor guidance are excluded from this public repository. All lab names and figures are synthetic; do not enter real customer or confidential information into shared exercises.
 
-This public repository contains the current learner-safe courseware and synthetic lab materials. Candidate assessment papers and marking guides are distributed through the controlled course channel. Assessment answer keys and source references are excluded from GitHub. Do not enter real personal, customer or tenant information into the sample files.
-
-## Provider
-
-Conducted by Tertiary Infotech Academy Pte Ltd (UEN 201200696W). [Official course page](https://www.tertiarycourses.com.sg/wsq-ai-transformation-with-microsoft-copilot.html).
+Conducted by Tertiary Infotech Academy Pte Ltd · UEN 201200696W.

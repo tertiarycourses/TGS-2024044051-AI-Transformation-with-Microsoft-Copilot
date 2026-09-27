@@ -1,6 +1,0 @@
-role,pilot_seats,licensed,permitted_sources,decision_owner
-Service agent,12,yes,POL-1;POL-2,Team lead
-Team lead,4,yes,POL-1;POL-2;POL-3,Operations manager
-Security reviewer,2,yes,POL-1;POL-2;POL-3;POL-4,Security head
-Analyst,8,yes,POL-1;POL-2;POL-3,Analytics lead
-Agent maker,4,yes,POL-1;POL-2;POL-3,Platform owner
