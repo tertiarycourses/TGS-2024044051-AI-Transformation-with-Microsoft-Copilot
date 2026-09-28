@@ -12,42 +12,50 @@ Northstar Service is a fictional service organisation. Its leadership is conside
 - BRD-4: Unresolved high-impact safety failures require a hold decision.
 
 ## Case facts
-### NS-16 — Information boundary
-- Business input: Synthetic confidential account file
-- Expected decision artifact: Data-use decision table
-- Named review gate: Data owner approves permitted sources
-- Challenge to test: Sensitive source is broadly shared
-- Outcome measure: Restricted exposures found in review
+### NS-16 — Spot a repeatable handoff
+- Business input: Synthetic email requests and missed deadlines
+- Expected decision artifact: Workflow opportunity card
+- Named review gate: Process owner confirms a repeatable trigger
+- Challenge to test: One-off judgment is automated
+- Outcome measure: Handoff time
 
-### NS-17 — Permission reality
-- Business input: Two roles with different access
-- Expected decision artifact: Access-test evidence record
-- Named review gate: Security owner reviews unexpected access
-- Challenge to test: User receives material outside role
-- Outcome measure: Unexpected accessible files
+### NS-17 — Define trigger and result
+- Business input: Service request email with fictional fields
+- Expected decision artifact: Trigger-to-result map
+- Named review gate: Owner verifies trigger is precise
+- Challenge to test: Wrong message starts workflow
+- Outcome measure: Correctly triggered cases
 
-### NS-18 — Source reliability
-- Business input: Current and retired policies
-- Expected decision artifact: Claim-verification worksheet
-- Named review gate: Reviewer checks every material statement
-- Challenge to test: Retired policy cited as current
-- Outcome measure: Supported claims divided by claims
+### NS-18 — Add review step
+- Business input: Draft acknowledgement and case summary
+- Expected decision artifact: Human review gate
+- Named review gate: No external commitment before approval
+- Challenge to test: Message sends without review
+- Outcome measure: Unapproved sends
 
-### NS-19 — Human approval
-- Business input: Draft external customer commitment
-- Expected decision artifact: Approval decision record
-- Named review gate: Named owner signs external commitment
-- Challenge to test: Copilot text is sent without review
-- Outcome measure: Unapproved external actions
+### NS-19 — Test exceptions
+- Business input: Missing case owner and contradictory priority
+- Expected decision artifact: Test and exception log
+- Named review gate: Hold unknown owner or conflicting input
+- Challenge to test: Exception is silently routed
+- Outcome measure: Exceptions detected
 
-### NS-20 — Responsible-use rule
-- Business input: A sensitive executive scenario
-- Expected decision artifact: One-page responsible-use charter
-- Named review gate: Legal and risk owners approve wording
-- Challenge to test: Charter is too vague to apply
-- Outcome measure: Exceptions resolved within SLA
+### NS-20 — Decide to activate
+- Business input: Workflow test record and accountable owner
+- Expected decision artifact: Go or hold record
+- Named review gate: Owner approves live activation in authorised tenant
+- Challenge to test: Simulation is described as deployed
+- Outcome measure: Approved runs
 
 ## Synthetic source challenge
 CURRENT-1 (approved, internal): Service directors approve external commitments before sending. This is the current rule.
 RETIRED-1 (superseded): A draft response may be sent automatically without director review. Do not rely on this statement.
 CONFIDENTIAL-1 (restricted, synthetic): Account NS-0007 has a fictional renewal discussion. Only the named service director may use it; other roles must not paste it into Copilot.
+
+## Workflow test messages (synthetic)
+WF-01 normal: From customer@example.test; subject Service request; case NS-1001; owner service.director@example.test; priority standard; request acknowledgement only.
+WF-02 missing owner: From customer@example.test; subject Service request; case NS-1002; owner blank; priority standard. Expected result: hold and ask a human to assign an owner.
+WF-03 conflicting priority: case NS-1003 says urgent in subject but standard in body. Expected result: hold for human review.
+Workflow guardrail: the draft may be saved or routed internally, but no external acknowledgement is sent without service-director approval.
+Record trigger, input fields, action, recipient, reviewer, failed test and activation status. This is synthetic design data, not evidence of a live workflow.
+

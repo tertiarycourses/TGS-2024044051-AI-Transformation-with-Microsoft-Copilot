@@ -12,37 +12,38 @@ Northstar Service is a fictional service organisation. Its leadership is conside
 - BRD-4: Unresolved high-impact safety failures require a hold decision.
 
 ## Case facts
-### NS-36 — Use-case portfolio
-- Business input: Twelve candidate workflows
-- Expected decision artifact: Ranked opportunity portfolio
-- Named review gate: Reject ownerless or unsafe use case
-- Challenge to test: Highest score hides weak data
-- Outcome measure: Validated value per use case
+### NS-36 — Map a work journey
+- Business input: Chat, workflow and agent opportunities
+- Expected decision artifact: Future-state journey map
+- Named review gate: Keep human decisions visible
+- Challenge to test: The same task is duplicated
+- Outcome measure: Time to completion
 
-### NS-37 — Adoption baseline
-- Business input: Usage by role and department
-- Expected decision artifact: Adoption baseline chart
-- Named review gate: Separate sign-in from productive use
-- Challenge to test: Licence assignment counted as adoption
-- Outcome measure: Weekly active users per cohort
+### NS-37 — Choose a first cohort
+- Business input: Thirty synthetic seats across three teams
+- Expected decision artifact: Pilot cohort plan
+- Named review gate: Sponsor signs selection criteria
+- Challenge to test: Licence count replaces opportunity
+- Outcome measure: Productive pilot users
 
-### NS-38 — Enablement design
-- Business input: Three role-specific skill gaps
-- Expected decision artifact: 90-day enablement calendar
-- Named review gate: Manager commits time for practice
-- Challenge to test: One generic training suits no one
-- Outcome measure: Practice completion by role
+### NS-38 — Prepare managers
+- Business input: Role questions and practice needs
+- Expected decision artifact: Manager enablement brief
+- Named review gate: Managers can explain limits and outcomes
+- Challenge to test: Training only shows features
+- Outcome measure: Practice completion
 
-### NS-39 — Feedback loop
-- Business input: Pilot questions and complaints
-- Expected decision artifact: Prioritised improvement backlog
-- Named review gate: Assign owner and due date
-- Challenge to test: Prompt advice hides a source defect
-- Outcome measure: Median defect closure time
+### NS-39 — Collect user feedback
+- Business input: Synthetic comments from first two weeks
+- Expected decision artifact: Improvement backlog
+- Named review gate: Assign an owner and due date
+- Challenge to test: Complaints about bad sources are called prompt errors
+- Outcome measure: Issues closed
 
-### NS-40 — Scale gate
-- Business input: Pilot adoption, quality and risk data
-- Expected decision artifact: Wave-two decision paper
-- Named review gate: Every critical threshold passes
-- Challenge to test: Average score hides a severe failure
-- Outcome measure: Criteria passed divided by required
+### NS-40 — Set scale gate
+- Business input: Adoption, quality and risk observations
+- Expected decision artifact: Scale decision checklist
+- Named review gate: Critical failure blocks scale
+- Challenge to test: Average score hides severe error
+- Outcome measure: Required gates passed
+

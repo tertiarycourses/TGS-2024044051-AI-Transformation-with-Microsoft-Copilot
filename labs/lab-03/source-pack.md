@@ -12,37 +12,38 @@ Northstar Service is a fictional service organisation. Its leadership is conside
 - BRD-4: Unresolved high-impact safety failures require a hold decision.
 
 ## Case facts
-### NS-11 — Word strategy memo
-- Business input: A synthetic service improvement brief
-- Expected decision artifact: Two-page strategy memo
-- Named review gate: Human executive signs the recommendation
-- Challenge to test: Draft invents a savings figure
-- Outcome measure: Verified material claims
+### NS-11 — Explore Excel data
+- Business input: Synthetic monthly service-volume workbook
+- Expected decision artifact: Trend summary
+- Named review gate: Check chart and denominator against workbook
+- Challenge to test: An outlier is presented as a trend
+- Outcome measure: Patterns confirmed
 
-### NS-12 — Recommendation logic
-- Business input: Three options and a cost ceiling
-- Expected decision artifact: Recommendation with assumptions
-- Named review gate: State rejected alternatives and rationale
-- Challenge to test: Trade-off is hidden
-- Outcome measure: Board questions answered with evidence
+### NS-12 — Build a simple chart
+- Business input: Synthetic before-and-after service table
+- Expected decision artifact: Annotated comparison chart
+- Named review gate: Use comparable periods and units
+- Challenge to test: Axis hides change or variation
+- Outcome measure: Correctly labelled charts
 
-### NS-13 — PowerPoint board story
-- Business input: Approved strategy memo and metrics
-- Expected decision artifact: Five-slide board narrative
-- Named review gate: Every chart traces to approved numbers
-- Challenge to test: Slide claims exceed the source
-- Outcome measure: Figures verified before review
+### NS-13 — Prepare a Teams meeting
+- Business input: Pilot objective, questions and decision owner
+- Expected decision artifact: Decision agenda
+- Named review gate: Chair confirms questions and owner
+- Challenge to test: Meeting has no decision to make
+- Outcome measure: Decisions reached
 
-### NS-14 — Decision appendix
-- Business input: Risk and sensitivity notes
-- Expected decision artifact: Board appendix and question log
-- Named review gate: Distinguish evidence from assumptions
-- Challenge to test: Appendix repeats unsupported claims
-- Outcome measure: Questions with grounded answers
+### NS-14 — Review meeting recap
+- Business input: Synthetic Teams transcript and dissent note
+- Expected decision artifact: Validated action log
+- Named review gate: Chair checks speakers, owners and dates
+- Challenge to test: Action is attributed to wrong person
+- Outcome measure: Actions confirmed
 
-### NS-15 — Leadership communication
-- Business input: Approved board decision
-- Expected decision artifact: Change announcement for review
-- Named review gate: No send until approved by sponsor
-- Challenge to test: Message promises unapproved outcomes
-- Outcome measure: Message comprehension in pilot survey
+### NS-15 — Follow up after meeting
+- Business input: Validated action log and unresolved questions
+- Expected decision artifact: Reviewed follow-up message
+- Named review gate: Owner approves external distribution
+- Challenge to test: Dissent or hold condition is omitted
+- Outcome measure: Actions closed on time
+

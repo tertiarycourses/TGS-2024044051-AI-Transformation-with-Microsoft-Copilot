@@ -12,37 +12,38 @@ Northstar Service is a fictional service organisation. Its leadership is conside
 - BRD-4: Unresolved high-impact safety failures require a hold decision.
 
 ## Case facts
-### NS-46 — Quality scorecard
-- Business input: Sample outputs and evidence checks
-- Expected decision artifact: Quality trend chart
-- Named review gate: Any critical safety failure blocks scale
-- Challenge to test: Good average masks one severe error
-- Outcome measure: Critical failures per sample
+### NS-46 — Prioritize use cases
+- Business input: Five candidate Copilot opportunities
+- Expected decision artifact: Opportunity portfolio
+- Named review gate: Reject ownerless opportunity
+- Challenge to test: Highest volume is treated as highest value
+- Outcome measure: Validated value per case
 
-### NS-47 — Customer outcome
-- Business input: Service response and satisfaction data
-- Expected decision artifact: Customer-impact summary
-- Named review gate: Control for work mix and seasonality
-- Challenge to test: AI usage is mistaken for customer benefit
-- Outcome measure: Comparable cycle-time change
+### NS-47 — Design ninety days
+- Business input: Pilot observations and manager capacity
+- Expected decision artifact: Ninety-day roadmap
+- Named review gate: Each wave has owner and gate
+- Challenge to test: Rollout outruns support
+- Outcome measure: Wave gates met
 
-### NS-48 — Board reporting
-- Business input: Adoption, value, quality and risk metrics
-- Expected decision artifact: One-page board scorecard
-- Named review gate: Every number has source and date
-- Challenge to test: Board pack hides uncertainty
-- Outcome measure: Claims with traceable evidence
+### NS-48 — Tell the board
+- Business input: Verified pilot outcome and open risks
+- Expected decision artifact: Board scorecard
+- Named review gate: Every claim has source and date
+- Challenge to test: Risk disappears from narrative
+- Outcome measure: Claims traceable
 
-### NS-49 — Next-quarter roadmap
-- Business input: Pilot findings and capacity limits
-- Expected decision artifact: 90-day roadmap with gates
-- Named review gate: Each wave has owner and stop rule
-- Challenge to test: Scale outruns governance capacity
-- Outcome measure: Wave gates met on schedule
+### NS-49 — Challenge the case
+- Business input: A confident recommendation and downside scenario
+- Expected decision artifact: Decision challenge log
+- Named review gate: Executive answers strongest objection
+- Challenge to test: Polished demo substitutes for evidence
+- Outcome measure: Objections resolved
 
-### NS-50 — Executive decision rehearsal
-- Business input: Board challenge questions
-- Expected decision artifact: Final go, hold or stop record
-- Named review gate: Executive states assumptions and dissent
-- Challenge to test: Decision is made on a polished demo
-- Outcome measure: Decision quality rubric score
+### NS-50 — Make the call
+- Business input: Portfolio, roadmap and scorecard
+- Expected decision artifact: Signed transformation decision
+- Named review gate: Owner names next review date
+- Challenge to test: Decision has no accountable owner
+- Outcome measure: Conditions met on time
+

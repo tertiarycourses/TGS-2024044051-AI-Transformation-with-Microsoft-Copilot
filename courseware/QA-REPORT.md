@@ -1,30 +1,28 @@
-# QA report — TGS-2024044051 v2.0
+# QA report — TGS-2024044051 v3.0
 
-Date: 27 September 2026
-Status: independent WSQ courseware QA PASS (local v2.0 artifacts). External publication is verified separately.
+Date: 28 September 2026
+Status: Independent WSQ courseware QA PASS for the exact local v3.0 artifacts listed below. External publication is verified separately.
 
-- Executive alignment: four approved WSQ learning outcomes retained; content uses AB-730 business use and AB-100 strategic themes without claiming certification preparation.
-- Slides: 330, with four original OpenAI-generated executive editorial images used on the cover and topic/lab dividers; instructional cases have decision, evidence, challenge and measure anchors.
-- Learner Guide: 45 pages, linked page-numbered contents with Word TOC field, ten lab walkthroughs with source-attributed official Microsoft workflow screenshots.
-- Lesson Plan: 4 pages, linked page-numbered contents with Word TOC field; three days, 22 guided hours plus two assessment hours; Day 1 schedule row kept together.
-- Facilitator Guide and Assessment Plan: 2 and 2 pages; executive facilitation and K1–K3/A1–A5 map.
-- Labs: ten self-contained folders; 41 Markdown sources and 41 same-basename PDFs. All ten printable READMEs include an attributed Microsoft UI screenshot page; each folder has prompt cards, source pack, scenario data, editable brief and value workbook.
-- Assessment: three WA questions K1–K3 and four PP tasks A1–A5; candidate papers are separate from assessor-only marking guides. WA marking guide prints on two pages without orphaned criterion.
-- Brochure: 3 pages; C-suite audience, current WSQ outcomes and verified fees retained.
+- Scope: 330-slide PPTX/PDF; LG 45 pages; LP 4 pages; FG/AP 2 pages each; 10 self-contained labs with 41 Markdown/PDF pairs; WA with three questions and PP with four tasks.
+- Learning outcomes: four approved WSQ outcomes retained verbatim and mapped to Copilot business use, Workflows controls, Agent Builder testing and adoption/value.
+- Visuals: six original OpenAI-generated editorial images; official, attributed Microsoft Workflows and Agent Builder UI examples in relevant lab/LG walkthroughs.
+- Safety/accuracy: synthetic data; normal and exception tests; human approval before external actions; Frontier/tenant availability caveat and labelled offline fallback.
+- Assessment privacy: candidate WA/PP papers separate from assessor-only answer keys; assessment/ and reference/ ignored by Git.
+- Independent QA reviewed rendered samples, TOCs, version history, schedules, K/A mapping, sources and lab inventories.
 
 ## SHA-256 of current release files
 
-- `courseware/AI-Transformation-with-Microsoft-Copilot-v2.0.pptx` — `65c1804bb11b0c6a9fcd9d71f5b2f89c2edf008c59726868df3bcb64e41a31cf`
-- `courseware/AI-Transformation-with-Microsoft-Copilot-v2.0.pdf` — `f58d0be90184b3e6a172d15f6fb8b8939633c5edc73d26a1ec6116b2f04515c1`
-- `courseware/LG-AI-Transformation-with-Microsoft-Copilot.docx` — `59f3668bee9d66549e54c330f3258acfcc169d50a253950c1318b0bd45765e54`
-- `courseware/LG-AI-Transformation-with-Microsoft-Copilot.pdf` — `50aa4481277da1899c6fa7755a9d854c8fed6a08b3fa6206476d91eefd509987`
-- `courseware/LP-AI-Transformation-with-Microsoft-Copilot.docx` — `69ca5950eaa170625a316486252f6cd2aa7f90638c0cf12c71829d6419dc3afa`
-- `courseware/LP-AI-Transformation-with-Microsoft-Copilot.pdf` — `350e4dd8e09237b2af026be56545c91722dd1bb0a47767e29b0c360b49fdd20d`
-- `courseware/FG-AI-Transformation-with-Microsoft-Copilot.docx` — `5b8b35a447536c0201bc95a5823152d2b4bbaf34e42e2694a7201d83505af97a`
-- `courseware/FG-AI-Transformation-with-Microsoft-Copilot.pdf` — `4c9dc907672e2d85cb622b54321720a3afdccfc7334a289e3a7e1597a507841f`
-- `courseware/AP-AI-Transformation-with-Microsoft-Copilot.docx` — `8eb06217f83dd77dfa55318a930267bd4ffdb0c0ee9c146431a8d24dd6e3c378`
-- `courseware/AP-AI-Transformation-with-Microsoft-Copilot.pdf` — `4f51892ced09ff59de73b9096255040f1499e0bd62cbbd1fd6dd168cfe63c683`
-- `assessment/WA (SAQ) - AI Transformation with Microsoft Copilot - v2.0.docx` — `8b888aaad0b68f8fe76ebe61dd88495e4132349d9e085ba711d43344cf1764ef`
-- `assessment/PP Assessment - AI Transformation with Microsoft Copilot - v2.0.docx` — `0f9e6b86d397831138883c5125ed5576e26421064876192d6ba28cb32721a15d`
-- `brochure/TGS-2024044051-AI-Transformation-with-Microsoft-Copilot-Brochure-v2.0.docx` — `c0aebf30f84a3247769b01dc3f59cce690ec62c601b4afef13ca9834b694667e`
-- `brochure/TGS-2024044051-AI-Transformation-with-Microsoft-Copilot-Brochure-v2.0.pdf` — `85c1fe7d0f1818b36a40dc7108ba7ba722c4202b2774608aa917592fd50dce97`
+- `courseware/AI-Transformation-with-Microsoft-Copilot-v3.0.pptx` — `dda331d1abc64b6d866caaf511e77002d835395635c1796b00c12c8bcd45f7ec`
+- `courseware/AI-Transformation-with-Microsoft-Copilot-v3.0.pdf` — `db8031feecb4ecb3323311a87a1e8a73cfe4dc382aad01639c6c93126b16eb6a`
+- `courseware/LG-AI-Transformation-with-Microsoft-Copilot.docx` — `fc53cc7643b2dbf36720cac60b2318c3eb23a54c998bcbf1d05859ea8a17fef4`
+- `courseware/LG-AI-Transformation-with-Microsoft-Copilot.pdf` — `998f32298b06b3e72650b1c6eef19977160c0a2f538c545af5b41664fc69ac1f`
+- `courseware/LP-AI-Transformation-with-Microsoft-Copilot.docx` — `6ee332c558b29c7ee51580c657c0fb450612d42b3ab637149ab20b573cc29cc0`
+- `courseware/LP-AI-Transformation-with-Microsoft-Copilot.pdf` — `db73f1a1420d12ab36eecfe761a682c894bddc3ec2b6df0b23dc9d688bd0c187`
+- `courseware/FG-AI-Transformation-with-Microsoft-Copilot.docx` — `36b29db0fe996a369c4efaf728d2e8bf3473446f082c226826f3760c5c20145e`
+- `courseware/FG-AI-Transformation-with-Microsoft-Copilot.pdf` — `98fbed8a3afff2bf8beb4c820acd04eac6ba1ef590282f14275a7fefb32a6ad9`
+- `courseware/AP-AI-Transformation-with-Microsoft-Copilot.docx` — `15722d7965864cf3bdd7a1d68c2f84845d13da183c153455d345aaac3c4efcbe`
+- `courseware/AP-AI-Transformation-with-Microsoft-Copilot.pdf` — `836856836dc5b9dc0db6582890c90df4757372c9fa3156f5f93fd32f6604d607`
+- `assessment/PP Assessment - AI Transformation with Microsoft Copilot - v3.0.docx` — `c1e03dde014a049781a6d5a31c322848a62bfa4d728495d6c95c971ea9baf333`
+- `assessment/WA (SAQ) - AI Transformation with Microsoft Copilot - v3.0.docx` — `3abecc1bd3144c54b5db64f08001a9467c31145c321c82f1a65dc57e69ff3758`
+- `brochure/TGS-2024044051-AI-Transformation-with-Microsoft-Copilot-Brochure-v3.0.docx` — `2b4c3c7ea8555991f5376b914b03e7459f5254ecfde4c0441e2e5e1881e629d1`
+- `brochure/TGS-2024044051-AI-Transformation-with-Microsoft-Copilot-Brochure-v3.0.pdf` — `e64cb95dff18cc5d3ca0de846515a66f579238502f61bd9282346c285df63bef`

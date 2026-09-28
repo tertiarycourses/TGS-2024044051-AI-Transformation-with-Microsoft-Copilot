@@ -1,6 +1,6 @@
 case_id,executive_decision,source_input,copilot_action,expected_artifact,decision_gate,challenge,outcome_measure
-NS-31,Vendor and partner review,Three proposed AI service options,Use Copilot to structure a due-diligence checklist,Partner decision matrix,Verify contractual and data claims,Marketing claims become evidence,Requirements with verified proof
-NS-32,Pilot operating model,30-seat cross-functional cohort,"Draft roles, support and review cadence",Pilot operating charter,"Sponsor, data owner and risk lead sign off",Pilot has licences but no support,Weekly active pilot users
-NS-33,Leadership role modelling,Three executive work patterns,Use Copilot to select visible leader practices,Leader demonstration plan,Leader shows reviewed outputs and limits,Leader promotes unverified output,Leaders demonstrating weekly
-NS-34,Change communication,Employee concerns and benefits,Draft FAQ and manager briefing in Word,Change narrative and FAQ,Include limits and escalation route,Message implies job replacement decision,Employee understanding score
-NS-35,Decision escalation,Pilot issue affecting customer outcome,"Map pause, fix and restart decisions",Escalation playbook,Named sponsor owns pause decision,Issue remains open while rollout expands,Median time to decision
+NS-31,Test a normal question,Approved leave-policy example,Ask the agent for a bounded answer,Normal-case test record,Answer matches current source,Agent omits a condition,Correct normal answers
+NS-32,Test missing knowledge,Question outside approved policy set,Ask the agent to state uncertainty and escalation,Out-of-scope test record,Agent hands off unknown answer,Agent invents a policy,Correct escalations
+NS-33,Test conflicting sources,Current and retired synthetic policies,Challenge the agent with contradictory evidence,Conflict test record,Owner chooses authoritative source,Agent cites retired policy,Conflicts surfaced
+NS-34,Pilot with users,Three synthetic role personas,Run a small acceptance review before sharing,Pilot feedback log,Address material failures before release,First demo is treated as sign-off,Critical failures closed
+NS-35,Share and monitor,Approved agent and audience list,Review Agent Builder sharing and ongoing feedback plan,Agent release and review card,Owner checks audience and knowledge access,Agent is shared too broadly,Reviewed usage and feedback

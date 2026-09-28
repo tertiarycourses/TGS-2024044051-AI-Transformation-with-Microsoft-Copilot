@@ -1,6 +1,6 @@
 case_id,executive_decision,source_input,copilot_action,expected_artifact,decision_gate,challenge,outcome_measure
-NS-41,Excel value model,Synthetic task time and cost worksheet,Use Copilot in Excel to analyse observed changes,Net time-saved table,Review time is deducted from gross saving,Gross saving is sold as net value,Net minutes saved per task
-NS-42,Benefit confidence,Observed sample and management estimates,Ask Copilot to label evidence strength,Benefit confidence register,Assumption is never described as measured,Weak sample is extrapolated widely,Measured share of claimed value
-NS-43,Cost of ownership,"Seats, enablement and support costs",Use Copilot to compare total cost scenarios,Total-cost table,Include recurring change and review effort,License fee is the only cost,Cost per realised outcome
-NS-44,Sensitivity test,"Low, base and high adoption scenarios",Ask Copilot to vary key assumptions,Sensitivity chart with break-even point,Decision holds under a credible downside,Single optimistic case drives approval,Break-even adoption threshold
-NS-45,Investment decision,Value model and risk register,Draft a balanced investment memo in Word,"Fund, hold or stop recommendation",Sponsor signs conditions and budget,Recommendation ignores risk-adjusted cost,Conditions met before release
+NS-41,Measure time honestly,"Baseline, assisted and review minutes",Use Copilot in Excel to explain net minutes saved,Net-time table,Check formulas and comparable work,Review time is omitted,Net minutes per task
+NS-42,Measure quality,Sample drafts and correction log,Use Copilot to summarize error types,Quality scorecard,Critical error is reported separately,Average quality hides material failure,Critical errors per sample
+NS-43,Measure adoption,Seat assignments and actual useful sessions,"Compare licence, activity and productive use",Adoption chart,Define productive use per role,Seats are presented as adoption,Productive users per cohort
+NS-44,Estimate total cost,"Synthetic licensing, training and review costs",Compare costs and benefits with Excel,Scenario table,Label assumptions and sensitivity,Licence is the only cost,Cost per verified outcome
+NS-45,Decide investment,"Value, quality and risk records","Draft a fund, hold or stop note in Word",Investment decision memo,Sponsor signs conditions,Optimistic forecast is described as measured,Conditions met

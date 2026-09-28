@@ -12,37 +12,38 @@ Northstar Service is a fictional service organisation. Its leadership is conside
 - BRD-4: Unresolved high-impact safety failures require a hold decision.
 
 ## Case facts
-### NS-01 — Transformation ambition
-- Business input: A service division misses response targets
-- Expected decision artifact: One-page transformation mandate
-- Named review gate: CEO approves a measurable business problem
-- Challenge to test: Ambition is only a technology slogan
-- Outcome measure: Target service-cycle reduction
+### NS-01 — Choose a service outcome
+- Business input: Service response baseline and customer feedback
+- Expected decision artifact: Pilot opportunity statement
+- Named review gate: Sponsor confirms outcome and owner
+- Challenge to test: AI use is mistaken for customer benefit
+- Outcome measure: Comparable response time
 
-### NS-02 — Value pool map
-- Business input: Five departments and task-volume estimates
-- Expected decision artifact: Value pool map with owner
-- Named review gate: Keep only opportunities tied to a named outcome
-- Challenge to test: High-volume activity has no customer value
-- Outcome measure: Annual addressable hours by pool
+### NS-02 — Ask a useful question
+- Business input: A vague request to improve service
+- Expected decision artifact: Reusable work prompt
+- Named review gate: Manager confirms the prompt answers the real question
+- Challenge to test: Polished response has no decision value
+- Outcome measure: Relevant answers per review
 
-### NS-03 — Executive sponsor
-- Business input: Four competing leadership priorities
-- Expected decision artifact: Sponsor decision and named accountable owner
-- Named review gate: Sponsor commits a review cadence
-- Challenge to test: No executive owns the benefit
-- Outcome measure: Sponsor decisions closed on time
+### NS-03 — Ground a chat answer
+- Business input: Current service policy and two case notes
+- Expected decision artifact: Sourced response summary
+- Named review gate: Check every material statement against the source
+- Challenge to test: An unsupported claim is repeated
+- Outcome measure: Verified claims per sample
 
-### NS-04 — Stakeholder alignment
-- Business input: Sales, service, finance and risk concerns
-- Expected decision artifact: Stakeholder trade-off matrix
-- Named review gate: Record dissent before selecting a pilot
-- Challenge to test: Risk concern is omitted from the brief
-- Outcome measure: Unresolved stakeholder objections
+### NS-04 — Compare options in Chat
+- Business input: Three possible pilot processes
+- Expected decision artifact: Option comparison
+- Named review gate: Use the same criteria for all options
+- Challenge to test: The preferred option receives easier criteria
+- Outcome measure: Options with complete evidence
 
-### NS-05 — Success definition
-- Business input: Baseline cycle time and quality scores
-- Expected decision artifact: Outcome scorecard with baseline and target
-- Named review gate: Board accepts denominator and time window
-- Challenge to test: Activity count is presented as impact
-- Outcome measure: Target met on comparable work
+### NS-05 — Share a Copilot Page
+- Business input: A reviewed team decision summary
+- Expected decision artifact: Shared planning page
+- Named review gate: Owner checks content and access before sharing
+- Challenge to test: Draft assumptions are shown as decisions
+- Outcome measure: Open questions assigned
+

@@ -63,20 +63,20 @@ def table(doc, headers, rows):
 def build_fg():
     doc = new_doc("Facilitator Guide")
     doc.add_heading("Executive delivery intent", 1)
-    doc.add_paragraph("Guide senior leaders through a synthetic Northstar Service decision. The course uses Microsoft Copilot directly in Chat, Word, PowerPoint, Outlook, Teams and Excel, then tests the human judgment required to turn drafts into responsible business decisions. AB-730 informs direct business use; AB-100 informs strategy and outcome judgment. This WSQ course is not Microsoft certification preparation.")
+    doc.add_paragraph("Guide senior leaders through a synthetic Northstar Service decision. The course uses Microsoft Copilot in Chat, Word, PowerPoint, Outlook, Teams and Excel; designs no-code Workflows and bounded agents, then tests the human judgment required to turn drafts into responsible business decisions. AB-730 informs direct business use; AB-731 informs strategy and outcome judgment. This WSQ course is not Microsoft certification preparation.")
     doc.add_heading("Prepare before class", 1)
     bullets(doc, [
-        "Check the current v2.0 slide deck, Learner Guide, Lesson Plan, Labs 01–10, and candidate WA/PP papers against TGS-2024044051.",
+        "Check the current v3.0 slide deck, Learner Guide, Lesson Plan, Labs 01–10, and candidate WA/PP papers against TGS-2024044051.",
         "Open each lab's source pack, prompts, executive brief and value-model workbook. Confirm the synthetic figures and formulas are readable.",
         "If licensed Microsoft 365 Copilot is available, use an approved work account. Keep the offline evidence path ready; never portray a simulation as a live tenant result.",
         "Ask executives to bring a business decision, success measure and human owner. Use only synthetic case data in shared exercises."
     ])
     doc.add_heading("Three-day facilitation sequence", 1)
     table(doc, ["Block", "Business work and Copilot use", "Trainer checkpoint"], [
-        ("Day 1 · LO1", "Strategy mandate, Copilot Chat decision brief, Word memo, PowerPoint board story; Labs 01–03", "Challenge each claim, baseline and board recommendation."),
-        ("Day 2 · LO2", "Source boundaries, responsible use, governance charter; Labs 04–05", "Escalate an unsupported or confidential claim; name approval owner."),
-        ("Day 2 · LO3 bridge", "Teams and Outlook executive cadence; Lab 06", "Verify decision, dissent, recipient and external commitment."),
-        ("Day 3 · LO3–LO4", "Integration options, adoption plan, Excel value model, board scorecard; Labs 07–10", "Compare as-is, extend, build; label observed values and assumptions."),
+        ("Day 1 · LO1", "Copilot Chat, Word, PowerPoint, Excel and Teams tasks; Labs 01–03", "Challenge each claim, baseline and board recommendation."),
+        ("Day 2 · LO2", "Workflow trigger, approval, exception and controls; Labs 04–05", "Escalate an unsupported or confidential claim; name approval owner."),
+        ("Day 2 · LO3 bridge", "Agent Builder purpose, instructions and approved knowledge; Lab 06", "Verify decision, dissent, recipient and external commitment."),
+        ("Day 3 · LO3–LO4", "Agent tests, adoption, Excel value and board scorecard; Labs 07–10", "Compare as-is, extend, build; label observed values and assumptions."),
         ("Day 3 · assessment", "WA 60 minutes and PP 60 minutes", "Use only candidate papers; keep marking guides controlled.")
     ])
     doc.add_page_break()
@@ -91,7 +91,7 @@ def build_fg():
         "Use the five synthetic cases in each lab. An unavailable feature becomes a clearly labelled offline decision exercise, not a fabricated screenshot."
     ])
     doc.add_heading("Assessment handoff", 1)
-    doc.add_paragraph("The Written Assessment covers K1–K3. The Practical Performance has four tasks covering A1–A5: executive transformation mandate, governance charter, integration decision and value-led board recommendation. Apply the current controlled marking guide and record criterion-level C/NYC evidence.")
+    doc.add_paragraph("The Written Assessment covers K1–K3. The Practical Performance has four tasks covering A1–A5: business-use artifact, workflow control card, agent test and value-led board recommendation. Apply the current controlled marking guide and record criterion-level C/NYC evidence.")
     doc.save(ROOT / "FG-AI-Transformation-with-Microsoft-Copilot.docx")
 
 
@@ -105,14 +105,14 @@ def build_ap():
     ])
     doc.add_heading("Outcome and criterion map", 1)
     table(doc, ["Outcome", "Knowledge evidence", "Performance evidence"], [
-        ("LO1 · Implementation and process", "K1 · outcome, pilot, Copilot use and baseline", "A1–A2 · mandate and implementation plan"),
-        ("LO2 · Security controls", "K2 · sources, verification and human approval", "A3 · responsible-use and control charter"),
-        ("LO3 · Integration alignment", "K3 · use-as-is, extend or build trade-offs", "A4 · integration decision and workflow test"),
+        ("LO1 · Implementation and process", "K1 · outcome, pilot, Copilot use and baseline", "A1–A2 · business-use artifact and pilot plan"),
+        ("LO2 · Security controls", "K2 · sources, verification and human approval", "A3 · workflow design and control card"),
+        ("LO3 · Integration alignment", "K3 · agent purpose, instructions, knowledge, tests and sharing", "A4 · agent design and test record"),
         ("LO4 · Optimization", "K3 · adoption, quality, risk and value", "A5 · value model and board go/hold recommendation")
     ])
     doc.add_heading("Administration", 1)
     bullets(doc, [
-        "Confirm candidate identity and issue only the current v2.0 WA/PP candidate papers. Keep answer keys and assessor decisions outside public learner locations.",
+        "Confirm candidate identity and issue only the current v3.0 WA/PP candidate papers. Keep answer keys and assessor decisions outside public learner locations.",
         "State time, open-book rules, permitted synthetic data, tool access and submission format before starting. An offline path must be labelled simulated.",
         "Provide approved reasonable adjustments without changing the standard. Record the adjustment and the evidence still required.",
         "Collect each candidate's own source-backed decision artifacts; do not coach toward a particular recommendation."
@@ -126,7 +126,7 @@ def build_ap():
         "Store submissions, assessor decisions and reassessment records in the approved controlled location under provider retention rules."
     ])
     doc.add_heading("Related documents", 1)
-    doc.add_paragraph("Use the v2.0 Trainer Slides, Learner Guide, Lesson Plan and ten executive labs for instruction. The WA and PP candidate papers are the only learner-facing assessment instruments; marking guides are assessor-only.")
+    doc.add_paragraph("Use the v3.0 Trainer Slides, Learner Guide, Lesson Plan and ten executive labs for instruction. The WA and PP candidate papers are the only learner-facing assessment instruments; marking guides are assessor-only.")
     doc.save(ROOT / "AP-AI-Transformation-with-Microsoft-Copilot.docx")
 
 if __name__ == "__main__":

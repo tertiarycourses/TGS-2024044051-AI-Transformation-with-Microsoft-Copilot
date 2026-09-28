@@ -1,13 +1,13 @@
-# Lab 06 — Executive meeting and communication
+# Lab 06 — Build a focused Copilot agent
 
-TGS-2024044051 · v2.0 · 27 September 2026
+TGS-2024044051 · v3.0 · 28 September 2026
 
-**Microsoft tool focus:** Copilot in Teams and Outlook
+**Microsoft tool focus:** Microsoft 365 Copilot Agent Builder
 
 All Northstar Service names, policies and values are synthetic training material. They are not a claim about a real company or a Microsoft tenant.
 
 ## Executive outcome
-Produce five short, source-backed decisions for executive meeting and communication. Each decision must show a human owner, uncertainty, measurable result and a go/hold/revise gate.
+Complete five short, source-backed business tasks for build a focused copilot agent. Each task must show a source, human owner, uncertainty, test, measurable result and go/hold/revise gate.
 
 ## Materials in this folder
 - `source-pack.md` — fictional organisation context, policy and five case facts.
@@ -16,16 +16,16 @@ Produce five short, source-backed decisions for executive meeting and communicat
 - `executive-brief.docx` — editable briefing input.
 - `value-model.csv` and `value-model.xlsx` — synthetic business values and formulas.
 - `evidence-template.md` — decision record to copy for each case.
-- `workflow-reference.png` — official Microsoft Support UI example for orientation, not evidence of this lab.
+- `workflow-reference.png` — official Microsoft Support app example for orientation; workflow and agent screens can differ.
 
 ## Steps
 1. Read BRD-1 to BRD-4 in `source-pack.md` and identify which rule applies to your case.
 2. Open `scenario.csv` and select one case ID. Note its intended decision, named output, challenge and outcome measure.
-3. Use the synthetic meeting note in source-pack.md with Copilot in Teams if available; prepare a reviewed draft in Outlook. An offline transcript exercise is equivalent if tenant features are unavailable.
-4. Copy the matching prompt from `prompt-cards.md`. Provide only the synthetic source content. Ask Copilot for a first draft, cited facts, assumptions and counterargument.
+3. Open Agent Builder in Microsoft 365 Copilot if available. Define purpose, instructions, approved knowledge and starter prompts. Preview responses. If unavailable, complete the same agent design in the supplied template.
+4. Copy the matching prompt from `prompt-cards.md`. Provide only the synthetic source content. Ask Copilot for a first draft, cited facts, assumptions and counterargument. For Workflows, specify trigger, action, approval and exception. For Agent Builder, specify purpose, instructions, approved knowledge and test cases.
 5. Compare each material statement and number with `source-pack.md` or `value-model.xlsx`. Correct or remove unsupported claims. Recalculate net minutes: baseline minus Copilot time minus human review time.
 6. Record the decision in a copy of `evidence-template.md`. State the source, evidence, owner, date, outcome measure and go/hold/revise conclusion.
-7. Repeat steps 2–6 for the other four case IDs. Submit all five decisions and the reviewed executive output.
+7. Repeat steps 2–6 for the other four case IDs. Submit all five reviewed task records and the workflow or agent design when relevant.
 
 ## Acceptance checks
 - Five case IDs have five reviewed decision records.
@@ -40,8 +40,11 @@ If Copilot cannot see the source, check your work account and licensing with the
 
 ## UI reference
 ![Official Microsoft Support UI example](workflow-reference.png)
-Source: https://support.microsoft.com/en-us/teams/meetings/recap-in-microsoft-teams. Interface and licensing may differ in your tenant. Do not submit this image as your own result.
+Source: https://support.microsoft.com/en-us/microsoft-365-copilot/build-your-own-agent-with-microsoft-365-copilot (image: https://support.microsoft.com/en-us/microsoft-365-copilot/media/starter-prompts-for-agent.png). Interface and licensing may differ in your tenant. Do not submit this image as your own result.
 
 ## Microsoft product references
 - https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot
 - https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-controls/security-governance
+- https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-workflows-in-microsoft-365-copilot
+- https://support.microsoft.com/en-us/microsoft-365-copilot/build-your-own-agent-with-microsoft-365-copilot
+

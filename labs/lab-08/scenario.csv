@@ -1,6 +1,6 @@
 case_id,executive_decision,source_input,copilot_action,expected_artifact,decision_gate,challenge,outcome_measure
-NS-36,Use-case portfolio,Twelve candidate workflows,"Prioritise volume, value, feasibility and risk",Ranked opportunity portfolio,Reject ownerless or unsafe use case,Highest score hides weak data,Validated value per use case
-NS-37,Adoption baseline,Usage by role and department,Compare active use with licensed seats,Adoption baseline chart,Separate sign-in from productive use,Licence assignment counted as adoption,Weekly active users per cohort
-NS-38,Enablement design,Three role-specific skill gaps,Ask Copilot to draft role-based coaching plans,90-day enablement calendar,Manager commits time for practice,One generic training suits no one,Practice completion by role
-NS-39,Feedback loop,Pilot questions and complaints,Cluster feedback themes with Copilot,Prioritised improvement backlog,Assign owner and due date,Prompt advice hides a source defect,Median defect closure time
-NS-40,Scale gate,"Pilot adoption, quality and risk data","Prepare go, hold or stop recommendation",Wave-two decision paper,Every critical threshold passes,Average score hides a severe failure,Criteria passed divided by required
+NS-36,Map a work journey,"Chat, workflow and agent opportunities",Show where each Copilot mode helps in one service journey,Future-state journey map,Keep human decisions visible,The same task is duplicated,Time to completion
+NS-37,Choose a first cohort,Thirty synthetic seats across three teams,Prioritize roles with useful work and manager support,Pilot cohort plan,Sponsor signs selection criteria,Licence count replaces opportunity,Productive pilot users
+NS-38,Prepare managers,Role questions and practice needs,Draft a manager briefing with Copilot in Word,Manager enablement brief,Managers can explain limits and outcomes,Training only shows features,Practice completion
+NS-39,Collect user feedback,Synthetic comments from first two weeks,Use Copilot Chat to group friction and successes,Improvement backlog,Assign an owner and due date,Complaints about bad sources are called prompt errors,Issues closed
+NS-40,Set scale gate,"Adoption, quality and risk observations","Define go, hold and stop conditions",Scale decision checklist,Critical failure blocks scale,Average score hides severe error,Required gates passed

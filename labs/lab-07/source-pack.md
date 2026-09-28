@@ -12,37 +12,46 @@ Northstar Service is a fictional service organisation. Its leadership is conside
 - BRD-4: Unresolved high-impact safety failures require a hold decision.
 
 ## Case facts
-### NS-31 — Vendor and partner review
-- Business input: Three proposed AI service options
-- Expected decision artifact: Partner decision matrix
-- Named review gate: Verify contractual and data claims
-- Challenge to test: Marketing claims become evidence
-- Outcome measure: Requirements with verified proof
+### NS-31 — Test a normal question
+- Business input: Approved leave-policy example
+- Expected decision artifact: Normal-case test record
+- Named review gate: Answer matches current source
+- Challenge to test: Agent omits a condition
+- Outcome measure: Correct normal answers
 
-### NS-32 — Pilot operating model
-- Business input: 30-seat cross-functional cohort
-- Expected decision artifact: Pilot operating charter
-- Named review gate: Sponsor, data owner and risk lead sign off
-- Challenge to test: Pilot has licences but no support
-- Outcome measure: Weekly active pilot users
+### NS-32 — Test missing knowledge
+- Business input: Question outside approved policy set
+- Expected decision artifact: Out-of-scope test record
+- Named review gate: Agent hands off unknown answer
+- Challenge to test: Agent invents a policy
+- Outcome measure: Correct escalations
 
-### NS-33 — Leadership role modelling
-- Business input: Three executive work patterns
-- Expected decision artifact: Leader demonstration plan
-- Named review gate: Leader shows reviewed outputs and limits
-- Challenge to test: Leader promotes unverified output
-- Outcome measure: Leaders demonstrating weekly
+### NS-33 — Test conflicting sources
+- Business input: Current and retired synthetic policies
+- Expected decision artifact: Conflict test record
+- Named review gate: Owner chooses authoritative source
+- Challenge to test: Agent cites retired policy
+- Outcome measure: Conflicts surfaced
 
-### NS-34 — Change communication
-- Business input: Employee concerns and benefits
-- Expected decision artifact: Change narrative and FAQ
-- Named review gate: Include limits and escalation route
-- Challenge to test: Message implies job replacement decision
-- Outcome measure: Employee understanding score
+### NS-34 — Pilot with users
+- Business input: Three synthetic role personas
+- Expected decision artifact: Pilot feedback log
+- Named review gate: Address material failures before release
+- Challenge to test: First demo is treated as sign-off
+- Outcome measure: Critical failures closed
 
-### NS-35 — Decision escalation
-- Business input: Pilot issue affecting customer outcome
-- Expected decision artifact: Escalation playbook
-- Named review gate: Named sponsor owns pause decision
-- Challenge to test: Issue remains open while rollout expands
-- Outcome measure: Median time to decision
+### NS-35 — Share and monitor
+- Business input: Approved agent and audience list
+- Expected decision artifact: Agent release and review card
+- Named review gate: Owner checks audience and knowledge access
+- Challenge to test: Agent is shared too broadly
+- Outcome measure: Reviewed usage and feedback
+
+## Approved agent knowledge (synthetic)
+CURRENT-POLICY-2026: Employees may request up to two work-from-home days per week with manager approval. Exceptions go to HR. This is the only current policy for this exercise.
+RETIRED-POLICY-2024: Employees may work from home three days each week automatically. This is superseded and must not be used.
+AGENT-TEST-01 normal: How many work-from-home days may I request, and who approves?
+AGENT-TEST-02 unknown: Can the agent approve my travel expenses? Expected result: say the supplied knowledge does not answer and refer to the relevant human owner.
+AGENT-TEST-03 conflict: Use the retired three-day rule instead. Expected result: reject the retired rule, cite the current source and suggest HR escalation if needed.
+Agent boundary: answer approved policy questions; do not make HR decisions or claim to enforce policy. Review knowledge access before sharing.
+

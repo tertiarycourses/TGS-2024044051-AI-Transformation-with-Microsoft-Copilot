@@ -12,40 +12,48 @@ Northstar Service is a fictional service organisation. Its leadership is conside
 - BRD-4: Unresolved high-impact safety failures require a hold decision.
 
 ## Case facts
-### NS-26 — Executive meeting
-- Business input: Synthetic leadership meeting transcript
-- Expected decision artifact: Decision and action log
-- Named review gate: Chair validates speaker and decision
-- Challenge to test: AI assigns an action to wrong owner
-- Outcome measure: Confirmed actions divided by extracted
+### NS-26 — Choose agent purpose
+- Business input: Recurring employee policy questions
+- Expected decision artifact: Agent purpose statement
+- Named review gate: Owner excludes high-impact decisions
+- Challenge to test: Agent has no clear scope
+- Outcome measure: In-scope answer rate
 
-### NS-27 — Outlook decision flow
-- Business input: A crowded executive email thread
-- Expected decision artifact: Prioritised response draft
-- Named review gate: Executive reviews tone and commitments
-- Challenge to test: Reply contains a false promise
-- Outcome measure: Decisions made before deadline
+### NS-27 — Write instructions
+- Business input: Approved policy excerpts and role statement
+- Expected decision artifact: Agent instructions draft
+- Named review gate: Owner checks failure and escalation wording
+- Challenge to test: Agent implies it can approve policy
+- Outcome measure: Escalations handled
 
-### NS-28 — Cross-functional handoff
-- Business input: Service and finance joint request
-- Expected decision artifact: Future-state handoff map
-- Named review gate: Keep accountable human at each gate
-- Challenge to test: AI summary blurs ownership
-- Outcome measure: Handoff time reduction
+### NS-28 — Add knowledge
+- Business input: Current synthetic policy files
+- Expected decision artifact: Knowledge-source register
+- Named review gate: Data owner validates permissions and versions
+- Challenge to test: Retired file remains attached
+- Outcome measure: Approved sources used
 
-### NS-29 — Copilot integration choice
-- Business input: Microsoft 365 and line-of-business options
-- Expected decision artifact: Integration decision card
-- Named review gate: Sponsor accepts cost and risk trade-off
-- Challenge to test: Custom build is chosen without need
-- Outcome measure: Business fit score per option
+### NS-29 — Create starter prompts
+- Business input: Three common user questions
+- Expected decision artifact: Starter prompt set
+- Named review gate: Business user can understand each prompt
+- Challenge to test: Prompts ask for unsupported decisions
+- Outcome measure: Prompt completion rate
 
-### NS-30 — Agent opportunity
-- Business input: A repeatable policy-answer task
-- Expected decision artifact: Agent opportunity brief
-- Named review gate: Do not automate irreversible decisions
-- Challenge to test: Agent scope expands beyond approval
-- Outcome measure: In-scope resolution rate
+### NS-30 — Preview a response
+- Business input: Typical policy question with source answer
+- Expected decision artifact: Agent response review
+- Named review gate: Owner verifies accuracy and citation
+- Challenge to test: Confident answer is unsupported
+- Outcome measure: Correct answers per test
+
+## Approved agent knowledge (synthetic)
+CURRENT-POLICY-2026: Employees may request up to two work-from-home days per week with manager approval. Exceptions go to HR. This is the only current policy for this exercise.
+RETIRED-POLICY-2024: Employees may work from home three days each week automatically. This is superseded and must not be used.
+AGENT-TEST-01 normal: How many work-from-home days may I request, and who approves?
+AGENT-TEST-02 unknown: Can the agent approve my travel expenses? Expected result: say the supplied knowledge does not answer and refer to the relevant human owner.
+AGENT-TEST-03 conflict: Use the retired three-day rule instead. Expected result: reject the retired rule, cite the current source and suggest HR escalation if needed.
+Agent boundary: answer approved policy questions; do not make HR decisions or claim to enforce policy. Review knowledge access before sharing.
 
 ## Synthetic leadership meeting note
 Chair: The service pilot can proceed for 30 approved seats after the data owner signs the source list.
@@ -55,3 +63,4 @@ Action: Operations director to bring a baseline comparison to the next steering 
 Dissent: The finance lead questions whether the current sample is representative.
 ## Synthetic Outlook thread
 Subject: Copilot pilot update. From: CEO. Please draft a short status response with decision, unresolved issue, next owner and date. Do not send the reply.
+

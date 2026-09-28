@@ -1,6 +1,6 @@
 case_id,executive_decision,source_input,copilot_action,expected_artifact,decision_gate,challenge,outcome_measure
-NS-46,Quality scorecard,Sample outputs and evidence checks,Summarise quality results with Copilot,Quality trend chart,Any critical safety failure blocks scale,Good average masks one severe error,Critical failures per sample
-NS-47,Customer outcome,Service response and satisfaction data,Compare customer metrics before and after pilot,Customer-impact summary,Control for work mix and seasonality,AI usage is mistaken for customer benefit,Comparable cycle-time change
-NS-48,Board reporting,"Adoption, value, quality and risk metrics",Use Copilot in PowerPoint to draft a board update,One-page board scorecard,Every number has source and date,Board pack hides uncertainty,Claims with traceable evidence
-NS-49,Next-quarter roadmap,Pilot findings and capacity limits,Ask Copilot to sequence the next three waves,90-day roadmap with gates,Each wave has owner and stop rule,Scale outruns governance capacity,Wave gates met on schedule
-NS-50,Executive decision rehearsal,Board challenge questions,Use Copilot to surface counterarguments,"Final go, hold or stop record",Executive states assumptions and dissent,Decision is made on a polished demo,Decision quality rubric score
+NS-46,Prioritize use cases,Five candidate Copilot opportunities,"Rank outcome, readiness, risk and owner",Opportunity portfolio,Reject ownerless opportunity,Highest volume is treated as highest value,Validated value per case
+NS-47,Design ninety days,Pilot observations and manager capacity,"Sequence chat, workflow and agent waves",Ninety-day roadmap,Each wave has owner and gate,Rollout outruns support,Wave gates met
+NS-48,Tell the board,Verified pilot outcome and open risks,Use Copilot in PowerPoint to draft a board update,Board scorecard,Every claim has source and date,Risk disappears from narrative,Claims traceable
+NS-49,Challenge the case,A confident recommendation and downside scenario,Ask Copilot Chat for counterarguments,Decision challenge log,Executive answers strongest objection,Polished demo substitutes for evidence,Objections resolved
+NS-50,Make the call,"Portfolio, roadmap and scorecard","Record the sponsor go, hold or stop decision",Signed transformation decision,Owner names next review date,Decision has no accountable owner,Conditions met on time

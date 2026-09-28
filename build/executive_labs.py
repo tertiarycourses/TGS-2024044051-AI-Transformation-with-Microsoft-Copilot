@@ -7,7 +7,7 @@ from course_data import CODE, VERSION, DATE, LAB_NAMES, LAB_APPS, RAW
 
 SOURCE_NOTE = ('All Northstar Service names, policies and values are synthetic training material. '
                'They are not a claim about a real company or a Microsoft tenant.')
-UI_FOR_LAB = ['chat','chat','ppt','chat','word','teams','outlook','word','excel','ppt']
+UI_FOR_LAB = ['chat','word','excel','workflows','workflows','agent-builder','agent-builder','word','excel','ppt']
 
 
 def make_executive_labs(root):
@@ -56,6 +56,21 @@ def make_executive_labs(root):
                        'CURRENT-1 (approved, internal): Service directors approve external commitments before sending. This is the current rule.',
                        'RETIRED-1 (superseded): A draft response may be sent automatically without director review. Do not rely on this statement.',
                        'CONFIDENTIAL-1 (restricted, synthetic): Account NS-0007 has a fictional renewal discussion. Only the named service director may use it; other roles must not paste it into Copilot.','']
+        if number in (4,5):
+            source += ['## Workflow test messages (synthetic)',
+                       'WF-01 normal: From customer@example.test; subject Service request; case NS-1001; owner service.director@example.test; priority standard; request acknowledgement only.',
+                       'WF-02 missing owner: From customer@example.test; subject Service request; case NS-1002; owner blank; priority standard. Expected result: hold and ask a human to assign an owner.',
+                       'WF-03 conflicting priority: case NS-1003 says urgent in subject but standard in body. Expected result: hold for human review.',
+                       'Workflow guardrail: the draft may be saved or routed internally, but no external acknowledgement is sent without service-director approval.',
+                       'Record trigger, input fields, action, recipient, reviewer, failed test and activation status. This is synthetic design data, not evidence of a live workflow.','']
+        if number in (6,7):
+            source += ['## Approved agent knowledge (synthetic)',
+                       'CURRENT-POLICY-2026: Employees may request up to two work-from-home days per week with manager approval. Exceptions go to HR. This is the only current policy for this exercise.',
+                       'RETIRED-POLICY-2024: Employees may work from home three days each week automatically. This is superseded and must not be used.',
+                       'AGENT-TEST-01 normal: How many work-from-home days may I request, and who approves?',
+                       'AGENT-TEST-02 unknown: Can the agent approve my travel expenses? Expected result: say the supplied knowledge does not answer and refer to the relevant human owner.',
+                       'AGENT-TEST-03 conflict: Use the retired three-day rule instead. Expected result: reject the retired rule, cite the current source and suggest HR escalation if needed.',
+                       'Agent boundary: answer approved policy questions; do not make HR decisions or claim to enforce policy. Review knowledge access before sharing.','']
         if number==6:
             source += ['## Synthetic leadership meeting note',
                        'Chair: The service pilot can proceed for 30 approved seats after the data owner signs the source list.',
@@ -67,41 +82,41 @@ def make_executive_labs(root):
                        'Subject: Copilot pilot update. From: CEO. Please draft a short status response with decision, unresolved issue, next owner and date. Do not send the reply.','']
         (folder/'source-pack.md').write_text('\n'.join(source)+'\n')
         prompts=['# Copy-ready executive Copilot prompts','',f'{CODE} · {VERSION} · {DATE}','',
-                 'Use these in an approved Microsoft 365 work account. Attach or paste only the synthetic source pack. If the required Copilot feature is unavailable, use the prompts as an offline drafting framework and label the result simulated.','']
+                 'Use these in an approved Microsoft 365 work account. Attach or paste only the synthetic source pack. Workflows may require Frontier access and features vary by tenant. If a feature is unavailable, use these prompts as an offline design and test framework; label the result simulated.','']
         for case_id,row in zip(case_ids,rows):
             prompts += [f'## {case_id} — {row[0]}','```text',
-                        f'Act as my executive decision analyst. I am reviewing {row[1].lower()}. Use only the attached Northstar Service source pack, particularly {case_id}. {row[2]}. Draft {row[3].lower()} for a leadership audience. Show the source behind every material claim, label assumptions, surface the strongest counterargument, and state what the human decision owner must verify. Apply this decision gate: {row[4]}. Do not invent figures or claim that a simulated action was deployed.',
+                        f'Help me complete a Microsoft 365 Copilot business task. I am reviewing {row[1].lower()}. Use only the attached Northstar Service source pack, particularly {case_id}. {row[2]}. Draft {row[3].lower()} for a leadership audience. Show the source behind every material claim, label assumptions, surface the strongest counterargument, and state what the human decision owner must verify. Apply this decision gate: {row[4]}. Do not invent figures or claim that a simulated action was deployed.',
                         '```','']
         (folder/'prompt-cards.md').write_text('\n'.join(prompts)+'\n')
         (folder/'evidence-template.md').write_text('# Executive evidence and decision record\n\n'+SOURCE_NOTE+'\n\nCase ID: ____\n\nDecision and audience: ____\n\nApproved source and version: ____\n\nCopilot output file or excerpt: ____\n\nClaims checked against source: ____\n\nAssumptions and uncertainty: ____\n\nCounterargument or failed test: ____\n\nMeasure, baseline and period: ____\n\nHuman owner and review date: ____\n\nGo / hold / revise with reason: ____\n')
         path_hint = {
-            1:'In Microsoft Copilot Chat, sign in with your work account and start a new chat.',
-            2:'In Microsoft Copilot Chat, start a new work chat and add the approved synthetic source.',
-            3:'Open executive-brief.docx in Word and use Copilot to draft the memo; use approved memo content to build a short PowerPoint board story.',
-            4:'In Microsoft Copilot Chat, use only the approved synthetic policy excerpts and review the response manually.',
-            5:'Open executive-brief.docx in Word and use Copilot to draft a governance charter for human review.',
-            6:'Use the synthetic meeting note in source-pack.md with Copilot in Teams if available; prepare a reviewed draft in Outlook. An offline transcript exercise is equivalent if tenant features are unavailable.',
-            7:'In Microsoft Copilot Chat, compare the business options; record the decision in executive-brief.docx.',
-            8:'In Microsoft Copilot Chat, prioritise the pilot portfolio and draft the adoption plan in Word.',
-            9:'Open value-model.xlsx in Excel and use Copilot to explain the calculations and sensitivity; check formulas directly, then write the investment memo.',
-            10:'Use value-model.xlsx for source numbers; prepare a concise PowerPoint board scorecard and use Copilot Chat to challenge the go/hold recommendation.',
+            1:'Use Microsoft 365 Copilot Chat with the synthetic source pack; save a reviewed Copilot Page or local shared brief.',
+            2:'Use Copilot in Word, PowerPoint or Outlook to draft one business artifact; keep any Outlook message unsent.',
+            3:'Use Copilot in Excel and Teams where available; check workbook figures and meeting owners against the source pack.',
+            4:'Open the Workflows agent in Microsoft 365 Copilot if the tenant offers it. Describe the trigger and desired steps in natural language. Review, test and leave inactive until an authorised owner approves. If Workflows is unavailable, draw and test the workflow offline.',
+            5:'Use the workflow card to review approved data, recipients, current sources, approval, exception and pause rules; test with the supplied synthetic cases. Keep an offline design clearly labelled.',
+            6:'Open Agent Builder in Microsoft 365 Copilot if available. Define purpose, instructions, approved knowledge and starter prompts. Preview responses. If unavailable, complete the same agent design in the supplied template.',
+            7:'Test the agent against normal, unknown and conflicting cases. Record correction and escalation; review knowledge permissions and sharing audience before any publication.',
+            8:'Use Copilot Chat and Word to draft a pilot cohort, manager briefing, feedback backlog and scale gate.',
+            9:'Use Copilot in Excel to explain the synthetic value model. Check formulas and quality before writing an investment note.',
+            10:'Use PowerPoint and Copilot Chat to create and challenge a board scorecard and a sponsor-owned decision.',
         }[number]
         guide=[f'# Lab {number:02d} — {title}','',f'{CODE} · {VERSION} · {DATE}',
                '',f'**Microsoft tool focus:** {app}','',SOURCE_NOTE,'',
-               '## Executive outcome',f'Produce five short, source-backed decisions for {title.lower()}. Each decision must show a human owner, uncertainty, measurable result and a go/hold/revise gate.','',
-               '## Materials in this folder','- `source-pack.md` — fictional organisation context, policy and five case facts.','- `scenario.csv` — five decisions, expected outputs and challenge checks.','- `prompt-cards.md` — copy-ready prompts for each case.','- `executive-brief.docx` — editable briefing input.','- `value-model.csv` and `value-model.xlsx` — synthetic business values and formulas.','- `evidence-template.md` — decision record to copy for each case.','- `workflow-reference.png` — official Microsoft Support UI example for orientation, not evidence of this lab.','',
+               '## Executive outcome',f'Complete five short, source-backed business tasks for {title.lower()}. Each task must show a source, human owner, uncertainty, test, measurable result and go/hold/revise gate.','',
+               '## Materials in this folder','- `source-pack.md` — fictional organisation context, policy and five case facts.','- `scenario.csv` — five decisions, expected outputs and challenge checks.','- `prompt-cards.md` — copy-ready prompts for each case.','- `executive-brief.docx` — editable briefing input.','- `value-model.csv` and `value-model.xlsx` — synthetic business values and formulas.','- `evidence-template.md` — decision record to copy for each case.','- `workflow-reference.png` — official Microsoft Support app example for orientation; workflow and agent screens can differ.','',
                '## Steps',
                '1. Read BRD-1 to BRD-4 in `source-pack.md` and identify which rule applies to your case.',
                '2. Open `scenario.csv` and select one case ID. Note its intended decision, named output, challenge and outcome measure.',
                '3. '+path_hint,
-               '4. Copy the matching prompt from `prompt-cards.md`. Provide only the synthetic source content. Ask Copilot for a first draft, cited facts, assumptions and counterargument.',
+               '4. Copy the matching prompt from `prompt-cards.md`. Provide only the synthetic source content. Ask Copilot for a first draft, cited facts, assumptions and counterargument. For Workflows, specify trigger, action, approval and exception. For Agent Builder, specify purpose, instructions, approved knowledge and test cases.',
                '5. Compare each material statement and number with `source-pack.md` or `value-model.xlsx`. Correct or remove unsupported claims. Recalculate net minutes: baseline minus Copilot time minus human review time.',
                '6. Record the decision in a copy of `evidence-template.md`. State the source, evidence, owner, date, outcome measure and go/hold/revise conclusion.',
-               '7. Repeat steps 2–6 for the other four case IDs. Submit all five decisions and the reviewed executive output.',
+               '7. Repeat steps 2–6 for the other four case IDs. Submit all five reviewed task records and the workflow or agent design when relevant.',
                '', '## Acceptance checks','- Five case IDs have five reviewed decision records.','- Every claim or value used to justify a decision cites the supplied source.','- Every record states the strongest challenge or failed test and how it was resolved.','- Any monetary value is labelled as a synthetic assumption, not measured savings.','- The human owner approves external commitments and high-impact decisions.','- The output says “offline simulation” when the live Copilot feature was unavailable.','',
                '## Troubleshooting','If Copilot cannot see the source, check your work account and licensing with the trainer. Continue with the local files and mark the work offline. If Copilot invents a figure, remove it and ask for a source-based revision. If two sources conflict, hold the decision and name the owner who will resolve the conflict.','',
                '## UI reference','![Official Microsoft Support UI example](workflow-reference.png)',f'Source: {ui_url}. Interface and licensing may differ in your tenant. Do not submit this image as your own result.','',
-               '## Microsoft product references','- https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot','- https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-controls/security-governance','']
+               '## Microsoft product references','- https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot','- https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-controls/security-governance', '- https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-workflows-in-microsoft-365-copilot', '- https://support.microsoft.com/en-us/microsoft-365-copilot/build-your-own-agent-with-microsoft-365-copilot','']
         (folder/'README.md').write_text('\n'.join(guide)+'\n')
         doc=Document();doc.add_heading('Northstar Service | Executive brief',0);doc.add_paragraph(f'Lab {number:02d}: {title}');doc.add_paragraph(SOURCE_NOTE)
         doc.add_heading('Decision brief',1);doc.add_paragraph('The CEO requires a clear recommendation supported by source evidence, assumptions, counterargument, owner and outcome measure.')

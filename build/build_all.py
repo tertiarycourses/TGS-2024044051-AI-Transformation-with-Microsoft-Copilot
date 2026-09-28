@@ -71,7 +71,7 @@ def slide_base(prs,title,kicker,topic,source=None):
  label(sl,.55,7.16,8,.2,f'{TITLE} · {CODE}',9,GREY)
  label(sl,8.3,7.16,3.5,.2,'© 2026 Tertiary Infotech Academy',9,GREY)
  label(sl,12.2,7.16,.5,.2,str(len(prs.slides)),9,GREY)
- if source:label(sl,.55,6.72,12.1,.3,'Source: '+source,8,GREY)
+ if source:label(sl,.55,6.72,12.1,.3,'Microsoft product/curriculum reference: '+source,8,GREY)
  return sl
 
 def assessment_flow(sl):
@@ -91,10 +91,10 @@ def make_slides():
  sl.shapes.add_picture(LOGO, Inches(.6), Inches(2.0),width=Inches(1.55))
  sl.shapes.add_picture(str(WSQ_LOGO), Inches(10.15), Inches(.16),width=Inches(2.55))
  sl.shapes.add_picture(str(ROOT/'build'/'executive-strategy.png'), Inches(6.7), Inches(2.0),width=Inches(5.8))
- box(sl,.6,3.55,5.7,1.65,'Four executive decisions: strategy → governance → operating model → measurable value',GREEN,21,True)
+ box(sl,.6,3.55,5.7,1.65,'Microsoft 365 Copilot → Workflows → Agents → measurable business outcomes',GREEN,21,True)
  label(sl,.6,5.3,12,.7,f'WSQ Course Code: {CODE}   |   3 days · 24 hours   |   {DATE}',19,INK,True)
  label(sl,.6,6.1,12,.55,'Conducted by Tertiary Infotech Academy Pte Ltd · UEN 201200696W',15,GREY)
- label(sl,.6,6.64,12,.28,'Informed by AB-730 business use and AB-100 strategic decisions · This WSQ course is not Microsoft exam preparation',9,GREY)
+ label(sl,.6,6.64,12,.28,'Informed by Microsoft AB-730 business use and AB-731 transformation leadership · This WSQ course is not Microsoft exam preparation',9,GREY)
  admin=[
   ('Digital attendance','TRAQOM / SSG QR attendance must be completed as directed by the trainer.'),
   ('General trainer','The assigned general trainer completes this profile in class.'),
@@ -102,7 +102,7 @@ def make_slides():
   ('Let us know each other','Share your leadership role, one Copilot opportunity and one decision concern.'),
   ('Ground rules','Use only synthetic lab data; cite sources; retain human approval for external actions.'),
   ('Learning platform','Access the course LMS/TMS record for current slides, guides, labs and assessment papers.'),
-  ('Lesson plan','Day 1: strategy and direct Copilot use · Day 2: governance and operating model · Day 3: value, scale and assessment.'),
+  ('Lesson plan','Day 1: Microsoft 365 Copilot · Day 2: Workflows and controls · Day 3: agents, adoption and value.'),
   ('Learning outcomes','LO1 implementation · LO2 controls · LO3 integration · LO4 optimization.'),
   ('Assessment briefing','Written SAQ: 3 questions / 1 hour. Practical: 4 tasks / 1 hour. Both open book.'),
   ('Assessment flow','Identity check → open-book instructions → individual evidence → assessor review → C / NYC decision.'),
@@ -114,7 +114,7 @@ def make_slides():
  'Let us know each other':['Your leadership role','One Copilot opportunity','One decision risk'],
  'Ground rules':['Synthetic data only','Cite each source','Human approval before action'],
  'Learning platform':['LMS/TMS course record','Current guide and slides','Labs and assessment papers'],
- 'Lesson plan':['Day 1: strategy and Copilot','Day 2: governance and use','Day 3: value and scale'],
+ 'Lesson plan':['Day 1: Microsoft 365 Copilot','Day 2: Copilot Workflows','Day 3: agents and scale'],
  'Learning outcomes':['LO1: implementation','LO2: security','LO3: integration','LO4: optimization'],
  'Assessment briefing':['Written SAQ\n3 questions · 60 min','Practical PP\n4 tasks · 60 min','Individual · open book'],
  'Assessment flow':['TRAQOM attendance','Assessment digital attendance','WA then PP','LMS submission','Sign Assessment Summary Record'],
@@ -147,7 +147,7 @@ def make_slides():
   box(sl,.95,4.65,11.25,.95,detail,PALE,17)
  for n,t in enumerate(TOPICS):
   sl=slide_base(prs,t,f'TOPIC {n+1:02d} · LO{n+1}',n)
-  sl.shapes.add_picture(str(ROOT/'build'/['executive-strategy.png','executive-governance.png','executive-workflow.png','executive-value.png'][n]), Inches(7.05), Inches(1.95),width=Inches(5.5))
+  sl.shapes.add_picture(str(ROOT/'build'/['executive-strategy.png','copilot-workflows-v3.png','copilot-agents-v3.png','executive-value.png'][n]), Inches(7.05), Inches(1.95),width=Inches(5.5))
   for j,c in enumerate([x for i,x in enumerate(RAW) if group(i)==n][:4]):box(sl,.7,1.9+j*1.05,5.95,.8,c[0]+' → '+c[3],PALE,14)
  # 300 business-anchored teaching slides: worked executive decisions, evidence and measures.
  inventory=[]
@@ -155,28 +155,28 @@ def make_slides():
   topic=group(i);source=SOURCES[topic];lab=(i//5)+1;case=f'NS-{i+1:02d}'
   if i%5==0:
    sl=slide_base(prs,f'Lab {lab:02d}: {LAB_NAMES[lab-1]}',f'EXECUTIVE COPILOT PRACTICE · {LAB_APPS[lab-1]}',topic)
-   sl.shapes.add_picture(str(ROOT/'build'/['executive-strategy.png','executive-governance.png','executive-workflow.png','executive-value.png'][topic]), Inches(6.8), Inches(1.9),width=Inches(5.6))
+   sl.shapes.add_picture(str(ROOT/'build'/['executive-strategy.png','copilot-workflows-v3.png','copilot-agents-v3.png','executive-value.png'][topic]), Inches(6.8), Inches(1.9),width=Inches(5.6))
    box(sl,.75,2.05,5.55,1.25,'Business outcome: '+out,GREEN,17,True)
    box(sl,.75,3.75,5.55,1.45,'Human decision gate: '+gate,PALE,16)
   entries=[
    ('MODEL',f'{name}: decision model'),('EVIDENCE',f'{name}: worked business artifact'),
    ('DECISION',f'{name}: executive review'),('CASE',f'{name}: challenge scenario'),
-   ('FORMULA',f'{name}: outcome measure'),('GATE',f'{name}: go or hold gate')]
+   ('RESULT',f'{name}: outcome measure'),('GATE',f'{name}: go or hold gate')]
   for view,(tag,title) in enumerate(entries):
    sl=slide_base(prs,title,f'TOPIC {topic+1:02d} · {tag} · {case}',topic,source)
    if view==0:
     box(sl,.7,2.35,3.55,1.4,inp,PALE,19,True);box(sl,4.9,2.35,3.55,1.4,process,GREEN,19,True);box(sl,9.1,2.35,3.55,1.4,out,PALE,19,True)
     line(sl,4.27,3.05,4.88,3.05);line(sl,8.47,3.05,9.08,3.05)
-    box(sl,2.2,4.55,8.95,.85,'Executive decision gate: '+gate,GREEN,16)
+    box(sl,2.2,4.55,8.95,.85,'Human check: '+gate,GREEN,16)
    elif view==1:
-    label(sl,.7,1.85,11.8,.45,'SYNTHETIC NORTHSTAR SERVICE WORKED ARTIFACT',13,TEAL,True)
+    label(sl,.7,1.85,11.8,.45,'NORTHSTAR SERVICE · SYNTHETIC WORKED EXAMPLE',13,TEAL,True)
     box(sl,.7,2.45,5.7,1.2,'INPUT RECORD  |  '+inp,PALE,18)
     box(sl,6.95,2.45,5.7,1.2,'OUTPUT RECORD  |  '+out,GREEN,18)
     line(sl,6.4,3.0,6.95,3.0)
-    box(sl,.7,4.25,11.95,1.2,'Transformation rule  |  '+process,PALE,19)
+    box(sl,.7,4.25,11.95,1.2,'Copilot action  |  '+process,PALE,19)
    elif view==2:
     box(sl,.8,2.0,5.5,1.15,'COPILOT USE  |  '+process,GREEN,18)
-    box(sl,6.85,2.0,5.5,1.15,'LEADER REVIEW  |  '+gate,PALE,18)
+    box(sl,6.85,2.0,5.5,1.15,'HUMAN REVIEW  |  '+gate,PALE,18)
     box(sl,.8,3.75,11.55,1.15,'CHALLENGE  |  '+fail,RED,18)
     label(sl,.8,5.45,11.4,.55,'Evidence to retain: source · assumption · owner · decision · outcome',16,INK)
    elif view==3:
@@ -230,7 +230,9 @@ def doc_start(kind):
  row=t.add_row().cells
  for c,v in zip(row,['v1.0','27 September 2026','Initial Copilot technical courseware release.','Tertiary Infotech Academy']):c.text=v
  row=t.add_row().cells
- for c,v in zip(row,[VERSION,DATE,'Executive overhaul: direct Copilot use, strategic decisions, governance, adoption and measured outcomes.','Tertiary Infotech Academy']):c.text=v
+ for c,v in zip(row,['v2.0','27 September 2026','Executive redesign: Copilot use, governance, adoption and value.','Tertiary Infotech Academy']):c.text=v
+ row=t.add_row().cells
+ for c,v in zip(row,[VERSION,DATE,'Microsoft 365 Copilot, no-code Workflows, Agent Builder and business outcomes.','Tertiary Infotech Academy']):c.text=v
  d.add_heading('Table of contents',1)
  toc_field=d.add_paragraph()
  toc_field.paragraph_format.space_after=DP(0)
@@ -262,7 +264,7 @@ def make_lg():
  d.add_heading('Before you start',1)
  d.add_paragraph('Use an approved Microsoft 365 training tenant. All Northstar Service names, customers, accounts and figures in this guide are synthetic. Do not enter live personal or confidential information in exercises.')
  d.add_paragraph('Use Microsoft 365 Copilot in an approved work or school account when licensed. If a feature is unavailable, use the supplied synthetic source pack and label the artifact as an offline exercise. Review every consequential Copilot statement against its source.')
- d.add_paragraph('Reference basis: Microsoft AI Business Professional (AB-730) informs direct Copilot work in Microsoft 365 apps; AB-100 informs strategic planning, governance and business value. This WSQ course is not Microsoft certification preparation.')
+ d.add_paragraph('Reference basis: Microsoft AB-730 informs Copilot work in Microsoft 365 apps; AB-731 informs transformation leadership. The MicrosoftLearning AB-730 labs inform the hands-on pattern. This WSQ course is not Microsoft exam preparation. Copilot Workflows availability depends on the tenant and Frontier access; complete a labelled offline design and test when unavailable.')
  for t,topic in enumerate(TOPICS):
   heading(d,f'Topic {t+1}: {topic}',1,f'topic{t+1}')
   d.add_paragraph(f'Learning outcome: LO{t+1}. Official reference: {SOURCES[t]}')
@@ -270,16 +272,16 @@ def make_lg():
    if group(i)!=t:continue
    name,inp,process,out,gate,fail,metric=row
    d.add_heading(f'{i+1:02d}. {name}',2)
-   d.add_paragraph(f'Business decision. Northstar Service starts with {inp.lower()}. {process}. The output is {out.lower()}.')
+   d.add_paragraph(f'Work scenario. Northstar Service starts with {inp.lower()}. {process}. The output is {out.lower()}.')
    d.add_paragraph(f'Copilot practice. 1. Open {LAB_APPS[i//5]} in the approved Microsoft 365 work environment, or open the synthetic case pack. 2. State the executive decision, audience, source and constraints. 3. Ask Copilot for the named output and request assumptions and uncertainties. 4. Compare material claims and figures with the supplied source. 5. Edit and save a human-owned decision artifact. The matching Lab {(i//5)+1:02d} gives a copy-ready prompt and detailed steps.')
-   d.add_paragraph(f'Executive gate. {gate}. Challenge the result if {fail.lower()}. Record the decision owner and a corrective action.')
+   d.add_paragraph(f'Human check. {gate}. Challenge the result if {fail.lower()}. Record the decision owner and a corrective action.')
    d.add_paragraph(f'Outcome measure. {metric}. State the baseline, cohort and period. Separate observed results from estimates before presenting value to a sponsor.')
    d.add_paragraph(f'Practice in Lab {(i//5)+1:02d}. Evidence: {out}; expected acceptance: {gate}.')
  heading(d,'Lab walkthroughs',1,'labwalk')
  for n in range(10):
   d.add_heading(f'Lab {n+1:02d} walkthrough',1)
   lab_items=RAW[n*5:(n+1)*5]
-  d.add_paragraph('Executive outcome: '+LAB_NAMES[n]+'. Use '+LAB_APPS[n]+' with five synthetic decisions. Save one reviewed, source-backed artifact for each decision.')
+  d.add_paragraph('Business outcome: '+LAB_NAMES[n]+'. Use '+LAB_APPS[n]+' with five synthetic tasks. Save a reviewed, source-backed artifact and a human go/hold decision for each task.')
   d.add_picture(str(ROOT/'build'/f'lab-{n+1:02d}-flow.png'),width=DI(6.4))
   from executive_labs import UI_FOR_LAB
   ui_kind=UI_FOR_LAB[n]
@@ -311,9 +313,9 @@ def make_lp():
  d.add_paragraph('Three days, 24 hours total: 22 guided training hours and 2 assessment hours. Each day includes breaks managed outside the teaching-hour allocations. Trainer adjusts pace to learner evidence while preserving outcome and assessment coverage.')
  d.add_page_break()
  schedule=[
- ('Day 1 · LO1',[("09:30–10:30","Executive Copilot opportunity and transformation mandate"),("10:30–12:30","Copilot Chat research and sourced decision briefs, Labs 01–02"),("13:30–15:30","Word strategy memo and PowerPoint board story, Lab 03"),("15:30–18:30","Leadership decisions, peer challenge and implementation roadmap")]),
- ('Day 2 · LO2',[("09:30–10:30","Business data boundaries and human review"),("10:30–12:30","Responsible use and source verification, Lab 04"),("13:30–15:30","Governance, risk appetite and board assurance, Lab 05"),("15:30–18:30","Executive communication, Teams and Outlook, Lab 06")]),
- ('Day 3 · LO3 and LO4',[("09:30–11:30","Integration choices and executive operating model, Lab 07"),("11:30–12:30","Adoption portfolio and 90-day plan, Lab 08"),("13:30–16:30","Excel value case, scorecard and go/hold decision, Labs 09–10"),("16:30–17:30","Written Assessment (SAQ)"),("17:30–18:30","Practical Performance Assessment")])]
+ ('Day 1 · LO1',[("09:30–10:30","Choose a business outcome and see Copilot Chat, Pages and prompts"),("10:30–12:30","Source-backed Copilot Chat and shared planning, Lab 01"),("13:30–15:30","Word, PowerPoint and Outlook business content, Lab 02"),("15:30–18:30","Excel analysis, Teams decisions and pilot process plan, Lab 03")]),
+ ('Day 2 · LO2',[("09:30–10:30","Workflows agent: trigger, action, human review and exception"),("10:30–12:30","Design and simulate a Copilot Workflow, Lab 04"),("13:30–15:30","Permissions, source checks, incident response and value, Lab 05"),("15:30–18:30","Workflow demonstration, failure tests and control charter")]),
+ ('Day 3 · LO3 and LO4',[("09:30–11:30","Agent Builder: purpose, instructions, knowledge and starter prompts, Lab 06"),("11:30–12:30","Test, share and monitor a bounded agent, Lab 07"),("13:30–16:30","Pilot adoption, value and board decision, Labs 08–10"),("16:30–17:30","Written Assessment (SAQ)"),("17:30–18:30","Practical Performance Assessment")])]
  for title,blocks in schedule:
   heading(d,title,2,'day'+str(schedule.index((title,blocks))+1))
   t=d.add_table(rows=1,cols=2);t.style='Light Shading Accent 1';t.rows[0].cells[0].text='Time';t.rows[0].cells[1].text='Teaching / assessment and evidence'
@@ -383,45 +385,10 @@ def exam_doc(kind,questions,filename):
   d.add_paragraph('Candidate response / evidence:');d.add_paragraph('\n'.join(['________________________________________________________________________________']*4))
  d.save(ASSESS/filename)
 
-def make_assessment():
- wa=[
-  ('K1 / LO1','Northstar Service is considering a 30-seat Microsoft 365 Copilot pilot. Explain how an executive should select a business outcome, use Copilot Chat or Word to prepare a sourced decision brief, choose a pilot cohort and define a measurable baseline. Name a human decision owner and one hold condition.'),
-  ('K2 / LO2','A Copilot draft board memo includes a confident claim from a confidential or outdated document. Explain the business controls for permitted sources, claim verification, human approval, incident escalation and responsible communication. State how the executive would challenge the draft before release.'),
-  ('K3 / LO3–LO4','Leadership is deciding whether to use Microsoft 365 Copilot as-is, extend a workflow or commission a custom solution. Explain how to compare business fit, risk, total cost and ownership. Describe how to measure net time saved, adoption and quality, distinguish observed results from assumptions and make a go/hold recommendation.'),
- ]
- pp=[
-  ('A1–A2 / LO1 / Labs 01–03','Using the synthetic Northstar Service source pack, produce an executive Copilot transformation mandate and a short pilot implementation plan. A1: show a priority business process, sourced Copilot-assisted briefing and named sponsor. A2: show 30-seat cohort, baseline, target, decision gates and a reviewed board message. Record what was generated by Copilot and what a human verified.'),
-  ('A3 / LO2 / Labs 04–05','Produce a one-page responsible-use and decision-control charter. Test a Copilot claim against a current and a retired or confidential source. Record the human approval gate, risk owner, failed test, correction and hold condition.'),
-  ('A4 / LO3 / Labs 06–08','Evaluate a cross-functional executive workflow using Microsoft 365 Copilot. Compare use-as-is, extend and build options against business fit, cost, data risk and ownership. Submit a decision card, revised executive communication or meeting action log, and one positive and one failure scenario. A simulated exercise must be labelled.'),
-  ('A5 / LO4 / Labs 09–10','Using the synthetic value model, calculate net minutes saved after human review, monthly capacity and a cost-aware scenario. Present adoption, quality and risk measures in a board scorecard. Give a go, hold or stop recommendation with assumptions, counterargument and named approver.'),
- ]
- exam_doc('Written Assessment (SAQ)',wa,f'WA (SAQ) - AI Transformation with Microsoft Copilot - {VERSION}.docx')
- exam_doc('Practical Performance Assessment',pp,f'PP Assessment - AI Transformation with Microsoft Copilot - {VERSION}.docx')
- key_text={
-  'WA':[
-   'Outcome is service cycle time or quality, with baseline, cohort and period. Use Copilot to draft a sourced brief; verify claims. Pilot seats go to roles with relevant work, approved data and manager support. Sponsor owns the decision; hold if source access or baseline is unresolved.',
-   'Use only approved, current sources within role permissions. Check each material claim against its cited source. Human reviewer approves board release; security owner handles unexpected exposure. Retired/confidential content triggers correction and possible hold. Preserve evidence and notify the accountable owner.',
-   'Compare as-is, extend and build on fit, total cost, data exposure, support and time to value. Net minutes = baseline minus Copilot-assisted time minus review time. Compare like-for-like tasks, track weekly productive adoption and quality; label rates and extrapolations as assumptions. A severe control failure means hold.',
-  ],
-  'PP':[
-   'A1: business problem, sponsor, process and sourced Copilot brief. A2: cohort, baseline, target, roadmap, review gates and board message. Claims and figures require source checks; external message remains unsent until approval.',
-   'Charter states permitted data, source verification, human approval, exception and incident owner. Demonstrate a current-source check and rejection of a retired or confidential claim. Record failed test and corrected output.',
-   'Decision card compares as-is, extend and build against the same four criteria. A reviewed meeting/action or communication artifact records owners. Positive scenario supports a decision; failure scenario shows wrong owner, unsupported claim or data exposure and escalation.',
-   'Check value-model formulas and assumptions. For a sample row with 24 baseline, 13 assisted and 3 review minutes, net saving is 8 minutes per comparable task. Multiply by volume for capacity; do not imply all capacity becomes cash. Board scorecard includes adoption, quality, value, risk, source and date. Recommendation has sponsor and hold gate.',
-  ],
- }
- for kind,questions,filename in [('WA',wa,f'Answer to WA (SAQ) - AI Transformation with Microsoft Copilot - {VERSION}.docx'),('PP',pp,f'Answer to PP Assessment - AI Transformation with Microsoft Copilot - {VERSION}.docx')]:
-  d=Document();d.sections[0].top_margin=DI(.65);d.sections[0].bottom_margin=DI(.65)
-  d.styles['Normal'].font.size=DP(9.5);d.styles['Normal'].paragraph_format.space_after=DP(4)
-  d.add_heading(f'TRAINER ONLY — {kind} marking guide',0);d.add_paragraph(f'{TITLE} · {CODE} · {VERSION}');d.add_page_break()
-  for i,(tag,q) in enumerate(questions,1):
-   d.add_heading(f'{i}. {tag}',1);d.add_paragraph(q);d.add_paragraph('Model evidence: '+key_text[kind][i-1]);d.add_paragraph('Competent when every named decision, source check, owner, measure and safety gate is evidenced. Unsupported claims, invented deployment or an unapproved external action require correction before C.')
-  d.save(ASSESS/filename)
-
 if __name__=='__main__':
  from executive_labs import make_executive_labs
- make_badge();make_lab_diagrams();make_executive_labs(ROOT);ppt,count=make_slides();lg=make_lg();lp=make_lp();make_assessment()
+ make_badge();make_lab_diagrams();make_executive_labs(ROOT);ppt,count=make_slides();lg=make_lg();lp=make_lp()
  old=(WARE/'CHANGELOG.md').read_text() if (WARE/'CHANGELOG.md').exists() else ''
  prior='## v1.0'+old.split('## v1.0',1)[1] if '## v1.0' in old else old
- (WARE/'CHANGELOG.md').write_text(f'# Change log\n\n## {VERSION} — {DATE}\n\nExecutive overhaul of TGS-2024044051: direct Microsoft Copilot use, strategic planning, governance, operating model, adoption and measured value. Rebuilt 320+ slide deck, Learner Guide, Lesson Plan, ten self-contained executive labs and WA/PP assessment. Added four original OpenAI-generated editorial images. AB-730 informed hands-on business use; AB-100 informed strategic decisions. This WSQ course does not claim Microsoft certification preparation.\n\n'+prior)
+ (WARE/'CHANGELOG.md').write_text(f'# Change log\n\n## {VERSION} — {DATE}\n\nBusiness-focused overhaul of TGS-2024044051: Microsoft 365 Copilot in everyday apps, Copilot Workflows, no-code Agent Builder, adoption and measured value. Rebuilt slide deck, Learner Guide, Lesson Plan, ten self-contained labs and WA/PP assessment. Added two original OpenAI-generated Workflows and Agents visuals to four existing editorial images. Microsoft AB-730 informed business-use exercises and AB-731 informed leadership and adoption. This WSQ course does not claim Microsoft certification preparation.\n\n'+prior)
  print('built',count,'slides',ppt,lg,lp)

@@ -1,30 +1,31 @@
 # Copy-ready executive Copilot prompts
 
-TGS-2024044051 · v2.0 · 27 September 2026
+TGS-2024044051 · v3.0 · 28 September 2026
 
-Use these in an approved Microsoft 365 work account. Attach or paste only the synthetic source pack. If the required Copilot feature is unavailable, use the prompts as an offline drafting framework and label the result simulated.
+Use these in an approved Microsoft 365 work account. Attach or paste only the synthetic source pack. Workflows may require Frontier access and features vary by tenant. If a feature is unavailable, use these prompts as an offline design and test framework; label the result simulated.
 
-## NS-46 — Quality scorecard
+## NS-46 — Prioritize use cases
 ```text
-Act as my executive decision analyst. I am reviewing sample outputs and evidence checks. Use only the attached Northstar Service source pack, particularly NS-46. Summarise quality results with Copilot. Draft quality trend chart for a leadership audience. Show the source behind every material claim, label assumptions, surface the strongest counterargument, and state what the human decision owner must verify. Apply this decision gate: Any critical safety failure blocks scale. Do not invent figures or claim that a simulated action was deployed.
+Help me complete a Microsoft 365 Copilot business task. I am reviewing five candidate copilot opportunities. Use only the attached Northstar Service source pack, particularly NS-46. Rank outcome, readiness, risk and owner. Draft opportunity portfolio for a leadership audience. Show the source behind every material claim, label assumptions, surface the strongest counterargument, and state what the human decision owner must verify. Apply this decision gate: Reject ownerless opportunity. Do not invent figures or claim that a simulated action was deployed.
 ```
 
-## NS-47 — Customer outcome
+## NS-47 — Design ninety days
 ```text
-Act as my executive decision analyst. I am reviewing service response and satisfaction data. Use only the attached Northstar Service source pack, particularly NS-47. Compare customer metrics before and after pilot. Draft customer-impact summary for a leadership audience. Show the source behind every material claim, label assumptions, surface the strongest counterargument, and state what the human decision owner must verify. Apply this decision gate: Control for work mix and seasonality. Do not invent figures or claim that a simulated action was deployed.
+Help me complete a Microsoft 365 Copilot business task. I am reviewing pilot observations and manager capacity. Use only the attached Northstar Service source pack, particularly NS-47. Sequence chat, workflow and agent waves. Draft ninety-day roadmap for a leadership audience. Show the source behind every material claim, label assumptions, surface the strongest counterargument, and state what the human decision owner must verify. Apply this decision gate: Each wave has owner and gate. Do not invent figures or claim that a simulated action was deployed.
 ```
 
-## NS-48 — Board reporting
+## NS-48 — Tell the board
 ```text
-Act as my executive decision analyst. I am reviewing adoption, value, quality and risk metrics. Use only the attached Northstar Service source pack, particularly NS-48. Use Copilot in PowerPoint to draft a board update. Draft one-page board scorecard for a leadership audience. Show the source behind every material claim, label assumptions, surface the strongest counterargument, and state what the human decision owner must verify. Apply this decision gate: Every number has source and date. Do not invent figures or claim that a simulated action was deployed.
+Help me complete a Microsoft 365 Copilot business task. I am reviewing verified pilot outcome and open risks. Use only the attached Northstar Service source pack, particularly NS-48. Use Copilot in PowerPoint to draft a board update. Draft board scorecard for a leadership audience. Show the source behind every material claim, label assumptions, surface the strongest counterargument, and state what the human decision owner must verify. Apply this decision gate: Every claim has source and date. Do not invent figures or claim that a simulated action was deployed.
 ```
 
-## NS-49 — Next-quarter roadmap
+## NS-49 — Challenge the case
 ```text
-Act as my executive decision analyst. I am reviewing pilot findings and capacity limits. Use only the attached Northstar Service source pack, particularly NS-49. Ask Copilot to sequence the next three waves. Draft 90-day roadmap with gates for a leadership audience. Show the source behind every material claim, label assumptions, surface the strongest counterargument, and state what the human decision owner must verify. Apply this decision gate: Each wave has owner and stop rule. Do not invent figures or claim that a simulated action was deployed.
+Help me complete a Microsoft 365 Copilot business task. I am reviewing a confident recommendation and downside scenario. Use only the attached Northstar Service source pack, particularly NS-49. Ask Copilot Chat for counterarguments. Draft decision challenge log for a leadership audience. Show the source behind every material claim, label assumptions, surface the strongest counterargument, and state what the human decision owner must verify. Apply this decision gate: Executive answers strongest objection. Do not invent figures or claim that a simulated action was deployed.
 ```
 
-## NS-50 — Executive decision rehearsal
+## NS-50 — Make the call
 ```text
-Act as my executive decision analyst. I am reviewing board challenge questions. Use only the attached Northstar Service source pack, particularly NS-50. Use Copilot to surface counterarguments. Draft final go, hold or stop record for a leadership audience. Show the source behind every material claim, label assumptions, surface the strongest counterargument, and state what the human decision owner must verify. Apply this decision gate: Executive states assumptions and dissent. Do not invent figures or claim that a simulated action was deployed.
+Help me complete a Microsoft 365 Copilot business task. I am reviewing portfolio, roadmap and scorecard. Use only the attached Northstar Service source pack, particularly NS-50. Record the sponsor go, hold or stop decision. Draft signed transformation decision for a leadership audience. Show the source behind every material claim, label assumptions, surface the strongest counterargument, and state what the human decision owner must verify. Apply this decision gate: Owner names next review date. Do not invent figures or claim that a simulated action was deployed.
 ```
+

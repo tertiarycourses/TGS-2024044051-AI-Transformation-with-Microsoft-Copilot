@@ -12,37 +12,38 @@ Northstar Service is a fictional service organisation. Its leadership is conside
 - BRD-4: Unresolved high-impact safety failures require a hold decision.
 
 ## Case facts
-### NS-41 — Excel value model
-- Business input: Synthetic task time and cost worksheet
-- Expected decision artifact: Net time-saved table
-- Named review gate: Review time is deducted from gross saving
-- Challenge to test: Gross saving is sold as net value
-- Outcome measure: Net minutes saved per task
+### NS-41 — Measure time honestly
+- Business input: Baseline, assisted and review minutes
+- Expected decision artifact: Net-time table
+- Named review gate: Check formulas and comparable work
+- Challenge to test: Review time is omitted
+- Outcome measure: Net minutes per task
 
-### NS-42 — Benefit confidence
-- Business input: Observed sample and management estimates
-- Expected decision artifact: Benefit confidence register
-- Named review gate: Assumption is never described as measured
-- Challenge to test: Weak sample is extrapolated widely
-- Outcome measure: Measured share of claimed value
+### NS-42 — Measure quality
+- Business input: Sample drafts and correction log
+- Expected decision artifact: Quality scorecard
+- Named review gate: Critical error is reported separately
+- Challenge to test: Average quality hides material failure
+- Outcome measure: Critical errors per sample
 
-### NS-43 — Cost of ownership
-- Business input: Seats, enablement and support costs
-- Expected decision artifact: Total-cost table
-- Named review gate: Include recurring change and review effort
-- Challenge to test: License fee is the only cost
-- Outcome measure: Cost per realised outcome
+### NS-43 — Measure adoption
+- Business input: Seat assignments and actual useful sessions
+- Expected decision artifact: Adoption chart
+- Named review gate: Define productive use per role
+- Challenge to test: Seats are presented as adoption
+- Outcome measure: Productive users per cohort
 
-### NS-44 — Sensitivity test
-- Business input: Low, base and high adoption scenarios
-- Expected decision artifact: Sensitivity chart with break-even point
-- Named review gate: Decision holds under a credible downside
-- Challenge to test: Single optimistic case drives approval
-- Outcome measure: Break-even adoption threshold
+### NS-44 — Estimate total cost
+- Business input: Synthetic licensing, training and review costs
+- Expected decision artifact: Scenario table
+- Named review gate: Label assumptions and sensitivity
+- Challenge to test: Licence is the only cost
+- Outcome measure: Cost per verified outcome
 
-### NS-45 — Investment decision
-- Business input: Value model and risk register
-- Expected decision artifact: Fund, hold or stop recommendation
-- Named review gate: Sponsor signs conditions and budget
-- Challenge to test: Recommendation ignores risk-adjusted cost
-- Outcome measure: Conditions met before release
+### NS-45 — Decide investment
+- Business input: Value, quality and risk records
+- Expected decision artifact: Investment decision memo
+- Named review gate: Sponsor signs conditions
+- Challenge to test: Optimistic forecast is described as measured
+- Outcome measure: Conditions met
+

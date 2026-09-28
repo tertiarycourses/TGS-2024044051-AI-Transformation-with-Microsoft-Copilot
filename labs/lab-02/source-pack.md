@@ -12,37 +12,38 @@ Northstar Service is a fictional service organisation. Its leadership is conside
 - BRD-4: Unresolved high-impact safety failures require a hold decision.
 
 ## Case facts
-### NS-06 — Copilot Chat briefing
-- Business input: Synthetic board pack and policy extract
-- Expected decision artifact: Five-point decision brief
-- Named review gate: Verify each material claim against the pack
-- Challenge to test: Plausible but unsupported claim
-- Outcome measure: Supported claims divided by claims
+### NS-06 — Draft a Word brief
+- Business input: Approved pilot notes and service baseline
+- Expected decision artifact: Reviewed Word brief
+- Named review gate: Sponsor checks numbers and recommendation
+- Challenge to test: Copilot invents a benefit estimate
+- Outcome measure: Verified material claims
 
-### NS-07 — Question refinement
-- Business input: A broad request for better service
-- Expected decision artifact: Reusable executive prompt
-- Named review gate: Prompt names audience and decision
-- Challenge to test: Response is polished but irrelevant
-- Outcome measure: Decision-relevant points per answer
+### NS-07 — Refine executive tone
+- Business input: A rough draft for a leadership audience
+- Expected decision artifact: Concise executive summary
+- Named review gate: Human owner signs the final message
+- Challenge to test: Important caveat disappears
+- Outcome measure: Decisions understood in review
 
-### NS-08 — Source challenge
-- Business input: Two contradictory policy versions
-- Expected decision artifact: Source conflict register
-- Named review gate: Owner resolves the authoritative version
-- Challenge to test: Retired document becomes the basis
-- Outcome measure: Current-source citation rate
+### NS-08 — Create board slides
+- Business input: Approved Word brief and baseline chart
+- Expected decision artifact: Board presentation
+- Named review gate: Trace every chart to approved values
+- Challenge to test: Slide claim exceeds the source
+- Outcome measure: Figures checked before review
 
-### NS-09 — Scenario comparison
-- Business input: Three service improvement options
-- Expected decision artifact: Option comparison table
-- Named review gate: Compare options with the same criteria
-- Challenge to test: One option gets a favourable metric
-- Outcome measure: Criteria applied to all options
+### NS-09 — Draft Outlook update
+- Business input: Approved pilot decision and open actions
+- Expected decision artifact: Unsent status draft
+- Named review gate: Sponsor approves recipients and commitments
+- Challenge to test: An unapproved promise is sent
+- Outcome measure: Messages approved before sending
 
-### NS-10 — Executive follow-up
-- Business input: A decision brief with open questions
-- Expected decision artifact: Follow-up action register
-- Named review gate: No recommendation without missing facts
-- Challenge to test: Open question disappears from summary
-- Outcome measure: Critical gaps assigned to owners
+### NS-10 — Use Researcher carefully
+- Business input: Synthetic policy and market question
+- Expected decision artifact: Source and uncertainty list
+- Named review gate: Validate dates, claims and relevance
+- Challenge to test: Research summary treats weak source as fact
+- Outcome measure: Sources verified
+
